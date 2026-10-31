@@ -1,0 +1,5462 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "AEROS Delhi NCR Spatial Pollution Heatmap",
+    "total_cells": 121,
+    "pm25_range": [
+      92.0,
+      92.0
+    ],
+    "pm10_range": [
+      155.0,
+      155.0
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "grid_r00_c00",
+      "properties": {
+        "cell_id": "grid_r00_c00",
+        "centroid_lat": 28.38,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 2.4,
+        "pm2_5_upper": 181.6,
+        "pm10": 155.0,
+        "pm10_lower": 0.0,
+        "pm10_upper": 315.67,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 27.57,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.355
+            ],
+            [
+              76.925,
+              28.355
+            ],
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.875,
+              28.405
+            ],
+            [
+              76.875,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c01",
+      "properties": {
+        "cell_id": "grid_r00_c01",
+        "centroid_lat": 28.38,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 7.6,
+        "pm2_5_upper": 176.4,
+        "pm10": 155.0,
+        "pm10_lower": 3.67,
+        "pm10_upper": 306.33,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 25.38,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.355
+            ],
+            [
+              76.975,
+              28.355
+            ],
+            [
+              76.975,
+              28.405
+            ],
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.925,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c02",
+      "properties": {
+        "cell_id": "grid_r00_c02",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 10.88,
+        "pm2_5_upper": 173.12,
+        "pm10": 155.0,
+        "pm10_lower": 9.54,
+        "pm10_upper": 300.46,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 24.01,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.355
+            ],
+            [
+              77.025,
+              28.355
+            ],
+            [
+              77.025,
+              28.405
+            ],
+            [
+              76.975,
+              28.405
+            ],
+            [
+              76.975,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c03",
+      "properties": {
+        "cell_id": "grid_r00_c03",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 11.88,
+        "pm2_5_upper": 172.12,
+        "pm10": 155.0,
+        "pm10_lower": 11.35,
+        "pm10_upper": 298.65,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 23.59,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.355
+            ],
+            [
+              77.075,
+              28.355
+            ],
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.025,
+              28.405
+            ],
+            [
+              77.025,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c04",
+      "properties": {
+        "cell_id": "grid_r00_c04",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 15.67,
+        "pm2_5_upper": 168.33,
+        "pm10": 155.0,
+        "pm10_lower": 18.14,
+        "pm10_upper": 291.86,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 22.0,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.355
+            ],
+            [
+              77.125,
+              28.355
+            ],
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.075,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c05",
+      "properties": {
+        "cell_id": "grid_r00_c05",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 20.41,
+        "pm2_5_upper": 163.59,
+        "pm10": 155.0,
+        "pm10_lower": 26.64,
+        "pm10_upper": 283.36,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 20.01,
+        "nearest_station": "Siri Fort, Delhi - CPCB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.355
+            ],
+            [
+              77.175,
+              28.355
+            ],
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.125,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c06",
+      "properties": {
+        "cell_id": "grid_r00_c06",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 24.83,
+        "pm2_5_upper": 159.17,
+        "pm10": 155.0,
+        "pm10_lower": 34.56,
+        "pm10_upper": 275.44,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 18.16,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.355
+            ],
+            [
+              77.225,
+              28.355
+            ],
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.175,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c07",
+      "properties": {
+        "cell_id": "grid_r00_c07",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 27.84,
+        "pm2_5_upper": 156.16,
+        "pm10": 155.0,
+        "pm10_lower": 39.96,
+        "pm10_upper": 270.04,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 16.9,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.355
+            ],
+            [
+              77.275,
+              28.355
+            ],
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.225,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c08",
+      "properties": {
+        "cell_id": "grid_r00_c08",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 27.6,
+        "pm2_5_upper": 156.4,
+        "pm10": 155.0,
+        "pm10_lower": 39.52,
+        "pm10_upper": 270.48,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 17.0,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.355
+            ],
+            [
+              77.325,
+              28.355
+            ],
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.275,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c09",
+      "properties": {
+        "cell_id": "grid_r00_c09",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 24.14,
+        "pm2_5_upper": 159.86,
+        "pm10": 155.0,
+        "pm10_lower": 33.32,
+        "pm10_upper": 276.68,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 18.45,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.355
+            ],
+            [
+              77.375,
+              28.355
+            ],
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.325,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r00_c10",
+      "properties": {
+        "cell_id": "grid_r00_c10",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 18.14,
+        "pm2_5_upper": 165.86,
+        "pm10": 155.0,
+        "pm10_lower": 22.57,
+        "pm10_upper": 287.43,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 20.96,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.355
+            ],
+            [
+              77.425,
+              28.355
+            ],
+            [
+              77.425,
+              28.405
+            ],
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.375,
+              28.355
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c00",
+      "properties": {
+        "cell_id": "grid_r01_c00",
+        "centroid_lat": 28.43,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 13.32,
+        "pm2_5_upper": 170.68,
+        "pm10": 155.0,
+        "pm10_lower": 13.92,
+        "pm10_upper": 296.08,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 22.99,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.405
+            ],
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.875,
+              28.455
+            ],
+            [
+              76.875,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c01",
+      "properties": {
+        "cell_id": "grid_r01_c01",
+        "centroid_lat": 28.43,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 19.68,
+        "pm2_5_upper": 164.32,
+        "pm10": 155.0,
+        "pm10_lower": 25.32,
+        "pm10_upper": 284.68,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 20.32,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.975,
+              28.405
+            ],
+            [
+              76.975,
+              28.455
+            ],
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.925,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c02",
+      "properties": {
+        "cell_id": "grid_r01_c02",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 23.84,
+        "pm2_5_upper": 160.16,
+        "pm10": 155.0,
+        "pm10_lower": 32.78,
+        "pm10_upper": 277.22,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 18.58,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.405
+            ],
+            [
+              77.025,
+              28.405
+            ],
+            [
+              77.025,
+              28.455
+            ],
+            [
+              76.975,
+              28.455
+            ],
+            [
+              76.975,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c03",
+      "properties": {
+        "cell_id": "grid_r01_c03",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 25.14,
+        "pm2_5_upper": 158.86,
+        "pm10": 155.0,
+        "pm10_lower": 35.12,
+        "pm10_upper": 274.88,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 18.03,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.405
+            ],
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.025,
+              28.455
+            ],
+            [
+              77.025,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c04",
+      "properties": {
+        "cell_id": "grid_r01_c04",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 27.89,
+        "pm2_5_upper": 156.11,
+        "pm10": 155.0,
+        "pm10_lower": 40.04,
+        "pm10_upper": 269.96,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 16.88,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.075,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c05",
+      "properties": {
+        "cell_id": "grid_r01_c05",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 32.71,
+        "pm2_5_upper": 151.29,
+        "pm10": 155.0,
+        "pm10_lower": 48.69,
+        "pm10_upper": 261.31,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 14.86,
+        "nearest_station": "Siri Fort, Delhi - CPCB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.125,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c06",
+      "properties": {
+        "cell_id": "grid_r01_c06",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 36.67,
+        "pm2_5_upper": 147.33,
+        "pm10": 155.0,
+        "pm10_lower": 55.78,
+        "pm10_upper": 254.22,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.2,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.175,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c07",
+      "properties": {
+        "cell_id": "grid_r01_c07",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 40.96,
+        "pm2_5_upper": 143.04,
+        "pm10": 155.0,
+        "pm10_lower": 63.47,
+        "pm10_upper": 246.53,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 11.4,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.225,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c08",
+      "properties": {
+        "cell_id": "grid_r01_c08",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 40.59,
+        "pm2_5_upper": 143.41,
+        "pm10": 155.0,
+        "pm10_lower": 62.81,
+        "pm10_upper": 247.19,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 11.55,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.275,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c09",
+      "properties": {
+        "cell_id": "grid_r01_c09",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 35.72,
+        "pm2_5_upper": 148.28,
+        "pm10": 155.0,
+        "pm10_lower": 54.09,
+        "pm10_upper": 255.91,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.59,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.325,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r01_c10",
+      "properties": {
+        "cell_id": "grid_r01_c10",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 27.96,
+        "pm2_5_upper": 156.04,
+        "pm10": 155.0,
+        "pm10_lower": 40.17,
+        "pm10_upper": 269.83,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 16.85,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.425,
+              28.405
+            ],
+            [
+              77.425,
+              28.455
+            ],
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.375,
+              28.405
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c00",
+      "properties": {
+        "cell_id": "grid_r02_c00",
+        "centroid_lat": 28.48,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 22.97,
+        "pm2_5_upper": 161.03,
+        "pm10": 155.0,
+        "pm10_lower": 31.22,
+        "pm10_upper": 278.78,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 18.94,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.455
+            ],
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.875,
+              28.505
+            ],
+            [
+              76.875,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c01",
+      "properties": {
+        "cell_id": "grid_r02_c01",
+        "centroid_lat": 28.48,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 30.94,
+        "pm2_5_upper": 153.06,
+        "pm10": 155.0,
+        "pm10_lower": 45.51,
+        "pm10_upper": 264.49,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 15.6,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.975,
+              28.455
+            ],
+            [
+              76.975,
+              28.505
+            ],
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.925,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c02",
+      "properties": {
+        "cell_id": "grid_r02_c02",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 36.54,
+        "pm2_5_upper": 147.46,
+        "pm10": 155.0,
+        "pm10_lower": 55.56,
+        "pm10_upper": 254.44,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.25,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.455
+            ],
+            [
+              77.025,
+              28.455
+            ],
+            [
+              77.025,
+              28.505
+            ],
+            [
+              76.975,
+              28.505
+            ],
+            [
+              76.975,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c03",
+      "properties": {
+        "cell_id": "grid_r02_c03",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 38.4,
+        "pm2_5_upper": 145.6,
+        "pm10": 155.0,
+        "pm10_lower": 58.89,
+        "pm10_upper": 251.11,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 12.47,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.455
+            ],
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.025,
+              28.505
+            ],
+            [
+              77.025,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c04",
+      "properties": {
+        "cell_id": "grid_r02_c04",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 39.17,
+        "pm2_5_upper": 144.83,
+        "pm10": 155.0,
+        "pm10_lower": 60.27,
+        "pm10_upper": 249.73,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 12.15,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.075,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c05",
+      "properties": {
+        "cell_id": "grid_r02_c05",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 44.5,
+        "pm2_5_upper": 139.5,
+        "pm10": 155.0,
+        "pm10_lower": 69.84,
+        "pm10_upper": 240.16,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.91,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.125,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c06",
+      "properties": {
+        "cell_id": "grid_r02_c06",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 49.11,
+        "pm2_5_upper": 134.89,
+        "pm10": 155.0,
+        "pm10_lower": 78.1,
+        "pm10_upper": 231.9,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 7.98,
+        "nearest_station": "Siri Fort, Delhi - CPCB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.175,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c07",
+      "properties": {
+        "cell_id": "grid_r02_c07",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.79,
+        "pm2_5_upper": 130.21,
+        "pm10": 155.0,
+        "pm10_lower": 86.48,
+        "pm10_upper": 223.52,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.02,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.225,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c08",
+      "properties": {
+        "cell_id": "grid_r02_c08",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.1,
+        "pm2_5_upper": 130.9,
+        "pm10": 155.0,
+        "pm10_lower": 85.26,
+        "pm10_upper": 224.74,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.31,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.275,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c09",
+      "properties": {
+        "cell_id": "grid_r02_c09",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 45.39,
+        "pm2_5_upper": 138.61,
+        "pm10": 155.0,
+        "pm10_lower": 71.42,
+        "pm10_upper": 238.58,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.54,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.325,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r02_c10",
+      "properties": {
+        "cell_id": "grid_r02_c10",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 35.26,
+        "pm2_5_upper": 148.74,
+        "pm10": 155.0,
+        "pm10_lower": 53.27,
+        "pm10_upper": 256.73,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.79,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.425,
+              28.455
+            ],
+            [
+              77.425,
+              28.505
+            ],
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.375,
+              28.455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c00",
+      "properties": {
+        "cell_id": "grid_r03_c00",
+        "centroid_lat": 28.53,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 30.36,
+        "pm2_5_upper": 153.64,
+        "pm10": 155.0,
+        "pm10_lower": 44.47,
+        "pm10_upper": 265.53,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 15.84,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.505
+            ],
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.875,
+              28.555
+            ],
+            [
+              76.875,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c01",
+      "properties": {
+        "cell_id": "grid_r03_c01",
+        "centroid_lat": 28.53,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 40.37,
+        "pm2_5_upper": 143.63,
+        "pm10": 155.0,
+        "pm10_lower": 62.43,
+        "pm10_upper": 247.57,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 11.64,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.975,
+              28.505
+            ],
+            [
+              76.975,
+              28.555
+            ],
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.925,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c02",
+      "properties": {
+        "cell_id": "grid_r03_c02",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 48.5,
+        "pm2_5_upper": 135.5,
+        "pm10": 155.0,
+        "pm10_lower": 77.0,
+        "pm10_upper": 233.0,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 8.24,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.505
+            ],
+            [
+              77.025,
+              28.505
+            ],
+            [
+              77.025,
+              28.555
+            ],
+            [
+              76.975,
+              28.555
+            ],
+            [
+              76.975,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c03",
+      "properties": {
+        "cell_id": "grid_r03_c03",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 51.65,
+        "pm2_5_upper": 132.35,
+        "pm10": 155.0,
+        "pm10_lower": 82.65,
+        "pm10_upper": 227.35,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.92,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.505
+            ],
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.025,
+              28.555
+            ],
+            [
+              77.025,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c04",
+      "properties": {
+        "cell_id": "grid_r03_c04",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 47.89,
+        "pm2_5_upper": 136.11,
+        "pm10": 155.0,
+        "pm10_lower": 75.9,
+        "pm10_upper": 234.1,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 8.49,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.075,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c05",
+      "properties": {
+        "cell_id": "grid_r03_c05",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.75,
+        "pm2_5_upper": 127.25,
+        "pm10": 155.0,
+        "pm10_lower": 91.8,
+        "pm10_upper": 218.2,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.78,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.125,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c06",
+      "properties": {
+        "cell_id": "grid_r03_c06",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 61.59,
+        "pm2_5_upper": 122.41,
+        "pm10": 155.0,
+        "pm10_lower": 100.47,
+        "pm10_upper": 209.53,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.75,
+        "nearest_station": "Siri Fort, Delhi - CPCB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.175,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c07",
+      "properties": {
+        "cell_id": "grid_r03_c07",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 63.18,
+        "pm2_5_upper": 120.82,
+        "pm10": 155.0,
+        "pm10_lower": 103.32,
+        "pm10_upper": 206.68,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.08,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.225,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c08",
+      "properties": {
+        "cell_id": "grid_r03_c08",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 61.46,
+        "pm2_5_upper": 122.54,
+        "pm10": 155.0,
+        "pm10_lower": 100.23,
+        "pm10_upper": 209.77,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.81,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.275,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c09",
+      "properties": {
+        "cell_id": "grid_r03_c09",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 49.81,
+        "pm2_5_upper": 134.19,
+        "pm10": 155.0,
+        "pm10_lower": 79.34,
+        "pm10_upper": 230.66,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 7.69,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.325,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r03_c10",
+      "properties": {
+        "cell_id": "grid_r03_c10",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 38.16,
+        "pm2_5_upper": 145.84,
+        "pm10": 155.0,
+        "pm10_lower": 58.45,
+        "pm10_upper": 251.55,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 12.57,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.425,
+              28.505
+            ],
+            [
+              77.425,
+              28.555
+            ],
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.375,
+              28.505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c00",
+      "properties": {
+        "cell_id": "grid_r04_c00",
+        "centroid_lat": 28.58,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 33.99,
+        "pm2_5_upper": 150.01,
+        "pm10": 155.0,
+        "pm10_lower": 50.99,
+        "pm10_upper": 259.01,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 14.32,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.555
+            ],
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.875,
+              28.605
+            ],
+            [
+              76.875,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c01",
+      "properties": {
+        "cell_id": "grid_r04_c01",
+        "centroid_lat": 28.58,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 45.56,
+        "pm2_5_upper": 138.44,
+        "pm10": 155.0,
+        "pm10_lower": 71.73,
+        "pm10_upper": 238.27,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.47,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.975,
+              28.555
+            ],
+            [
+              76.975,
+              28.605
+            ],
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.925,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c02",
+      "properties": {
+        "cell_id": "grid_r04_c02",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.96,
+        "pm2_5_upper": 127.04,
+        "pm10": 155.0,
+        "pm10_lower": 92.18,
+        "pm10_upper": 217.82,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.69,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.555
+            ],
+            [
+              77.025,
+              28.555
+            ],
+            [
+              77.025,
+              28.605
+            ],
+            [
+              76.975,
+              28.605
+            ],
+            [
+              76.975,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c03",
+      "properties": {
+        "cell_id": "grid_r04_c03",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 64.81,
+        "pm2_5_upper": 119.19,
+        "pm10": 155.0,
+        "pm10_lower": 106.24,
+        "pm10_upper": 203.76,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 1.4,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.555
+            ],
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.025,
+              28.605
+            ],
+            [
+              77.025,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c04",
+      "properties": {
+        "cell_id": "grid_r04_c04",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 55.17,
+        "pm2_5_upper": 128.83,
+        "pm10": 155.0,
+        "pm10_lower": 88.96,
+        "pm10_upper": 221.04,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 5.44,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.075,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c05",
+      "properties": {
+        "cell_id": "grid_r04_c05",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 60.9,
+        "pm2_5_upper": 123.1,
+        "pm10": 155.0,
+        "pm10_lower": 99.24,
+        "pm10_upper": 210.76,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 3.04,
+        "nearest_station": "R K Puram, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.125,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c06",
+      "properties": {
+        "cell_id": "grid_r04_c06",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 62.63,
+        "pm2_5_upper": 121.37,
+        "pm10": 155.0,
+        "pm10_lower": 102.35,
+        "pm10_upper": 207.65,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.31,
+        "nearest_station": "Lodhi Road, Delhi - IMD"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.175,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c07",
+      "properties": {
+        "cell_id": "grid_r04_c07",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 61.2,
+        "pm2_5_upper": 122.8,
+        "pm10": 155.0,
+        "pm10_lower": 99.77,
+        "pm10_upper": 210.23,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.91,
+        "nearest_station": "Lodhi Road, Delhi - IMD"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.225,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c08",
+      "properties": {
+        "cell_id": "grid_r04_c08",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.49,
+        "pm2_5_upper": 130.51,
+        "pm10": 155.0,
+        "pm10_lower": 85.94,
+        "pm10_upper": 224.06,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.15,
+        "nearest_station": "Okhla Phase-2, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.275,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c09",
+      "properties": {
+        "cell_id": "grid_r04_c09",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 48.72,
+        "pm2_5_upper": 135.28,
+        "pm10": 155.0,
+        "pm10_lower": 77.39,
+        "pm10_upper": 232.61,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 8.15,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.325,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r04_c10",
+      "properties": {
+        "cell_id": "grid_r04_c10",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 41.74,
+        "pm2_5_upper": 142.26,
+        "pm10": 155.0,
+        "pm10_lower": 64.88,
+        "pm10_upper": 245.12,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 11.07,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.425,
+              28.555
+            ],
+            [
+              77.425,
+              28.605
+            ],
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.375,
+              28.555
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c00",
+      "properties": {
+        "cell_id": "grid_r05_c00",
+        "centroid_lat": 28.63,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 32.7,
+        "pm2_5_upper": 151.3,
+        "pm10": 155.0,
+        "pm10_lower": 48.66,
+        "pm10_upper": 261.34,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 14.86,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.605
+            ],
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.875,
+              28.655
+            ],
+            [
+              76.875,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c01",
+      "properties": {
+        "cell_id": "grid_r05_c01",
+        "centroid_lat": 28.63,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 43.64,
+        "pm2_5_upper": 140.36,
+        "pm10": 155.0,
+        "pm10_lower": 68.28,
+        "pm10_upper": 241.72,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 10.28,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.975,
+              28.605
+            ],
+            [
+              76.975,
+              28.655
+            ],
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.925,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c02",
+      "properties": {
+        "cell_id": "grid_r05_c02",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.46,
+        "pm2_5_upper": 130.54,
+        "pm10": 155.0,
+        "pm10_lower": 85.89,
+        "pm10_upper": 224.11,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.16,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.605
+            ],
+            [
+              77.025,
+              28.605
+            ],
+            [
+              77.025,
+              28.655
+            ],
+            [
+              76.975,
+              28.655
+            ],
+            [
+              76.975,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c03",
+      "properties": {
+        "cell_id": "grid_r05_c03",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 58.05,
+        "pm2_5_upper": 125.95,
+        "pm10": 155.0,
+        "pm10_lower": 94.13,
+        "pm10_upper": 215.87,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.23,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.605
+            ],
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.025,
+              28.655
+            ],
+            [
+              77.025,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c04",
+      "properties": {
+        "cell_id": "grid_r05_c04",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 57.27,
+        "pm2_5_upper": 126.73,
+        "pm10": 155.0,
+        "pm10_lower": 92.73,
+        "pm10_upper": 217.27,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.56,
+        "nearest_station": "Punjabi Bagh, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.075,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c05",
+      "properties": {
+        "cell_id": "grid_r05_c05",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.34,
+        "pm2_5_upper": 127.66,
+        "pm10": 155.0,
+        "pm10_lower": 91.06,
+        "pm10_upper": 218.94,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.95,
+        "nearest_station": "Mandir Marg, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.125,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c06",
+      "properties": {
+        "cell_id": "grid_r05_c06",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 67.05,
+        "pm2_5_upper": 116.95,
+        "pm10": 155.0,
+        "pm10_lower": 110.27,
+        "pm10_upper": 199.73,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 0.46,
+        "nearest_station": "Mandir Marg, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.175,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c07",
+      "properties": {
+        "cell_id": "grid_r05_c07",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 65.96,
+        "pm2_5_upper": 118.04,
+        "pm10": 155.0,
+        "pm10_lower": 108.31,
+        "pm10_upper": 201.69,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 0.92,
+        "nearest_station": "ITO, Delhi - CPCB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.225,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c08",
+      "properties": {
+        "cell_id": "grid_r05_c08",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 62.32,
+        "pm2_5_upper": 121.68,
+        "pm10": 155.0,
+        "pm10_lower": 101.78,
+        "pm10_upper": 208.22,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.44,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.275,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c09",
+      "properties": {
+        "cell_id": "grid_r05_c09",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 59.05,
+        "pm2_5_upper": 124.95,
+        "pm10": 155.0,
+        "pm10_lower": 95.92,
+        "pm10_upper": 214.08,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 3.81,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.325,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r05_c10",
+      "properties": {
+        "cell_id": "grid_r05_c10",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 48.09,
+        "pm2_5_upper": 135.91,
+        "pm10": 155.0,
+        "pm10_lower": 76.26,
+        "pm10_upper": 233.74,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 8.41,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.425,
+              28.605
+            ],
+            [
+              77.425,
+              28.655
+            ],
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.375,
+              28.605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c00",
+      "properties": {
+        "cell_id": "grid_r06_c00",
+        "centroid_lat": 28.68,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 26.93,
+        "pm2_5_upper": 157.07,
+        "pm10": 155.0,
+        "pm10_lower": 38.33,
+        "pm10_upper": 271.67,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 17.28,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.655
+            ],
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.875,
+              28.705
+            ],
+            [
+              76.875,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c01",
+      "properties": {
+        "cell_id": "grid_r06_c01",
+        "centroid_lat": 28.68,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 35.85,
+        "pm2_5_upper": 148.15,
+        "pm10": 155.0,
+        "pm10_lower": 54.32,
+        "pm10_upper": 255.68,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.54,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.975,
+              28.655
+            ],
+            [
+              76.975,
+              28.705
+            ],
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.925,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c02",
+      "properties": {
+        "cell_id": "grid_r06_c02",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 42.49,
+        "pm2_5_upper": 141.51,
+        "pm10": 155.0,
+        "pm10_lower": 66.23,
+        "pm10_upper": 243.77,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 10.76,
+        "nearest_station": "Dwarka-Sector 8, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.655
+            ],
+            [
+              77.025,
+              28.655
+            ],
+            [
+              77.025,
+              28.705
+            ],
+            [
+              76.975,
+              28.705
+            ],
+            [
+              76.975,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c03",
+      "properties": {
+        "cell_id": "grid_r06_c03",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 52.32,
+        "pm2_5_upper": 131.68,
+        "pm10": 155.0,
+        "pm10_lower": 83.85,
+        "pm10_upper": 226.15,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.64,
+        "nearest_station": "Punjabi Bagh, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.655
+            ],
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.025,
+              28.705
+            ],
+            [
+              77.025,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c04",
+      "properties": {
+        "cell_id": "grid_r06_c04",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 63.17,
+        "pm2_5_upper": 120.83,
+        "pm10": 155.0,
+        "pm10_lower": 103.31,
+        "pm10_upper": 206.69,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.08,
+        "nearest_station": "Punjabi Bagh, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.075,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c05",
+      "properties": {
+        "cell_id": "grid_r06_c05",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 61.77,
+        "pm2_5_upper": 122.23,
+        "pm10": 155.0,
+        "pm10_lower": 100.79,
+        "pm10_upper": 209.21,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.67,
+        "nearest_station": "Wazirpur, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.125,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c06",
+      "properties": {
+        "cell_id": "grid_r06_c06",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 58.52,
+        "pm2_5_upper": 125.48,
+        "pm10": 155.0,
+        "pm10_lower": 94.97,
+        "pm10_upper": 215.03,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.04,
+        "nearest_station": "Wazirpur, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.175,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c07",
+      "properties": {
+        "cell_id": "grid_r06_c07",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 54.42,
+        "pm2_5_upper": 129.58,
+        "pm10": 155.0,
+        "pm10_lower": 87.62,
+        "pm10_upper": 222.38,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 5.75,
+        "nearest_station": "ITO, Delhi - CPCB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.225,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c08",
+      "properties": {
+        "cell_id": "grid_r06_c08",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 58.61,
+        "pm2_5_upper": 125.39,
+        "pm10": 155.0,
+        "pm10_lower": 95.13,
+        "pm10_upper": 214.87,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.0,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.275,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c09",
+      "properties": {
+        "cell_id": "grid_r06_c09",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.33,
+        "pm2_5_upper": 127.67,
+        "pm10": 155.0,
+        "pm10_lower": 91.04,
+        "pm10_upper": 218.96,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.95,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.325,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r06_c10",
+      "properties": {
+        "cell_id": "grid_r06_c10",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 46.72,
+        "pm2_5_upper": 137.28,
+        "pm10": 155.0,
+        "pm10_lower": 73.8,
+        "pm10_upper": 236.2,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 8.98,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.425,
+              28.655
+            ],
+            [
+              77.425,
+              28.705
+            ],
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.375,
+              28.655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c00",
+      "properties": {
+        "cell_id": "grid_r07_c00",
+        "centroid_lat": 28.73,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 30.96,
+        "pm2_5_upper": 153.04,
+        "pm10": 155.0,
+        "pm10_lower": 45.55,
+        "pm10_upper": 264.45,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 15.59,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.705
+            ],
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.875,
+              28.755
+            ],
+            [
+              76.875,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c01",
+      "properties": {
+        "cell_id": "grid_r07_c01",
+        "centroid_lat": 28.73,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 41.66,
+        "pm2_5_upper": 142.34,
+        "pm10": 155.0,
+        "pm10_lower": 64.73,
+        "pm10_upper": 245.27,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 11.11,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.975,
+              28.705
+            ],
+            [
+              76.975,
+              28.755
+            ],
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.925,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c02",
+      "properties": {
+        "cell_id": "grid_r07_c02",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 51.1,
+        "pm2_5_upper": 132.9,
+        "pm10": 155.0,
+        "pm10_lower": 81.65,
+        "pm10_upper": 228.35,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 7.15,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.705
+            ],
+            [
+              77.025,
+              28.705
+            ],
+            [
+              77.025,
+              28.755
+            ],
+            [
+              76.975,
+              28.755
+            ],
+            [
+              76.975,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c03",
+      "properties": {
+        "cell_id": "grid_r07_c03",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 55.89,
+        "pm2_5_upper": 128.11,
+        "pm10": 155.0,
+        "pm10_lower": 90.25,
+        "pm10_upper": 219.75,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 5.14,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.705
+            ],
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.025,
+              28.755
+            ],
+            [
+              77.025,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c04",
+      "properties": {
+        "cell_id": "grid_r07_c04",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 63.28,
+        "pm2_5_upper": 120.72,
+        "pm10": 155.0,
+        "pm10_lower": 103.5,
+        "pm10_upper": 206.5,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.04,
+        "nearest_station": "Rohini, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.075,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c05",
+      "properties": {
+        "cell_id": "grid_r07_c05",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 63.3,
+        "pm2_5_upper": 120.7,
+        "pm10": 155.0,
+        "pm10_lower": 103.54,
+        "pm10_upper": 206.46,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.03,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.125,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c06",
+      "properties": {
+        "cell_id": "grid_r07_c06",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 61.27,
+        "pm2_5_upper": 122.73,
+        "pm10": 155.0,
+        "pm10_lower": 99.9,
+        "pm10_upper": 210.1,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.88,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.175,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c07",
+      "properties": {
+        "cell_id": "grid_r07_c07",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 49.67,
+        "pm2_5_upper": 134.33,
+        "pm10": 155.0,
+        "pm10_lower": 79.09,
+        "pm10_upper": 230.91,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 7.75,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.225,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c08",
+      "properties": {
+        "cell_id": "grid_r07_c08",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 45.79,
+        "pm2_5_upper": 138.21,
+        "pm10": 155.0,
+        "pm10_lower": 72.15,
+        "pm10_upper": 237.85,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.37,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.275,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c09",
+      "properties": {
+        "cell_id": "grid_r07_c09",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 44.73,
+        "pm2_5_upper": 139.27,
+        "pm10": 155.0,
+        "pm10_lower": 70.24,
+        "pm10_upper": 239.76,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.82,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.325,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r07_c10",
+      "properties": {
+        "cell_id": "grid_r07_c10",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 38.69,
+        "pm2_5_upper": 145.31,
+        "pm10": 155.0,
+        "pm10_lower": 59.41,
+        "pm10_upper": 250.59,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 12.35,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.425,
+              28.705
+            ],
+            [
+              77.425,
+              28.755
+            ],
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.375,
+              28.705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c00",
+      "properties": {
+        "cell_id": "grid_r08_c00",
+        "centroid_lat": 28.78,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 33.03,
+        "pm2_5_upper": 150.97,
+        "pm10": 155.0,
+        "pm10_lower": 49.26,
+        "pm10_upper": 260.74,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 14.72,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.755
+            ],
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.875,
+              28.805
+            ],
+            [
+              76.875,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c01",
+      "properties": {
+        "cell_id": "grid_r08_c01",
+        "centroid_lat": 28.78,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 44.65,
+        "pm2_5_upper": 139.35,
+        "pm10": 155.0,
+        "pm10_lower": 70.09,
+        "pm10_upper": 239.91,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.85,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.975,
+              28.755
+            ],
+            [
+              76.975,
+              28.805
+            ],
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.925,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c02",
+      "properties": {
+        "cell_id": "grid_r08_c02",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.25,
+        "pm2_5_upper": 127.75,
+        "pm10": 155.0,
+        "pm10_lower": 90.89,
+        "pm10_upper": 219.11,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.99,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.755
+            ],
+            [
+              77.025,
+              28.755
+            ],
+            [
+              77.025,
+              28.805
+            ],
+            [
+              76.975,
+              28.805
+            ],
+            [
+              76.975,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c03",
+      "properties": {
+        "cell_id": "grid_r08_c03",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 67.11,
+        "pm2_5_upper": 116.89,
+        "pm10": 155.0,
+        "pm10_lower": 110.38,
+        "pm10_upper": 199.62,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 0.43,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.755
+            ],
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.025,
+              28.805
+            ],
+            [
+              77.025,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c04",
+      "properties": {
+        "cell_id": "grid_r08_c04",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.71,
+        "pm2_5_upper": 127.29,
+        "pm10": 155.0,
+        "pm10_lower": 91.72,
+        "pm10_upper": 218.28,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.79,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.075,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c05",
+      "properties": {
+        "cell_id": "grid_r08_c05",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 54.74,
+        "pm2_5_upper": 129.26,
+        "pm10": 155.0,
+        "pm10_lower": 88.2,
+        "pm10_upper": 221.8,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 5.62,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.125,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c06",
+      "properties": {
+        "cell_id": "grid_r08_c06",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.88,
+        "pm2_5_upper": 130.12,
+        "pm10": 155.0,
+        "pm10_lower": 86.65,
+        "pm10_upper": 223.35,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 5.98,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.175,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c07",
+      "properties": {
+        "cell_id": "grid_r08_c07",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 45.84,
+        "pm2_5_upper": 138.16,
+        "pm10": 155.0,
+        "pm10_lower": 72.23,
+        "pm10_upper": 237.77,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.35,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.225,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c08",
+      "properties": {
+        "cell_id": "grid_r08_c08",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 35.56,
+        "pm2_5_upper": 148.44,
+        "pm10": 155.0,
+        "pm10_lower": 53.8,
+        "pm10_upper": 256.2,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.66,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.275,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c09",
+      "properties": {
+        "cell_id": "grid_r08_c09",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 31.97,
+        "pm2_5_upper": 152.03,
+        "pm10": 155.0,
+        "pm10_lower": 47.36,
+        "pm10_upper": 262.64,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 15.17,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.325,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r08_c10",
+      "properties": {
+        "cell_id": "grid_r08_c10",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 27.8,
+        "pm2_5_upper": 156.2,
+        "pm10": 155.0,
+        "pm10_lower": 39.88,
+        "pm10_upper": 270.12,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 16.92,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.425,
+              28.755
+            ],
+            [
+              77.425,
+              28.805
+            ],
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.375,
+              28.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c00",
+      "properties": {
+        "cell_id": "grid_r09_c00",
+        "centroid_lat": 28.83,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 30.26,
+        "pm2_5_upper": 153.74,
+        "pm10": 155.0,
+        "pm10_lower": 44.3,
+        "pm10_upper": 265.7,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 15.88,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.805
+            ],
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.875,
+              28.855
+            ],
+            [
+              76.875,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c01",
+      "properties": {
+        "cell_id": "grid_r09_c01",
+        "centroid_lat": 28.83,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 40.68,
+        "pm2_5_upper": 143.32,
+        "pm10": 155.0,
+        "pm10_lower": 62.97,
+        "pm10_upper": 247.03,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 11.52,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.975,
+              28.805
+            ],
+            [
+              76.975,
+              28.855
+            ],
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.925,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c02",
+      "properties": {
+        "cell_id": "grid_r09_c02",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 49.6,
+        "pm2_5_upper": 134.4,
+        "pm10": 155.0,
+        "pm10_lower": 78.97,
+        "pm10_upper": 231.03,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 7.78,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.805
+            ],
+            [
+              77.025,
+              28.805
+            ],
+            [
+              77.025,
+              28.855
+            ],
+            [
+              76.975,
+              28.855
+            ],
+            [
+              76.975,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c03",
+      "properties": {
+        "cell_id": "grid_r09_c03",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 56.48,
+        "pm2_5_upper": 127.52,
+        "pm10": 155.0,
+        "pm10_lower": 91.3,
+        "pm10_upper": 218.7,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 4.89,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.805
+            ],
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.025,
+              28.855
+            ],
+            [
+              77.025,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c04",
+      "properties": {
+        "cell_id": "grid_r09_c04",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 61.94,
+        "pm2_5_upper": 122.06,
+        "pm10": 155.0,
+        "pm10_lower": 101.1,
+        "pm10_upper": 208.9,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 2.6,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.075,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c05",
+      "properties": {
+        "cell_id": "grid_r09_c05",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.63,
+        "pm2_5_upper": 130.37,
+        "pm10": 155.0,
+        "pm10_lower": 86.2,
+        "pm10_upper": 223.8,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.09,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.125,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c06",
+      "properties": {
+        "cell_id": "grid_r09_c06",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 42.6,
+        "pm2_5_upper": 141.4,
+        "pm10": 155.0,
+        "pm10_lower": 66.42,
+        "pm10_upper": 243.58,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 10.71,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.175,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c07",
+      "properties": {
+        "cell_id": "grid_r09_c07",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 36.44,
+        "pm2_5_upper": 147.56,
+        "pm10": 155.0,
+        "pm10_lower": 55.38,
+        "pm10_upper": 254.62,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 13.29,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.225,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c08",
+      "properties": {
+        "cell_id": "grid_r09_c08",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 28.53,
+        "pm2_5_upper": 155.47,
+        "pm10": 155.0,
+        "pm10_lower": 41.19,
+        "pm10_upper": 268.81,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 16.61,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.275,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c09",
+      "properties": {
+        "cell_id": "grid_r09_c09",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 19.12,
+        "pm2_5_upper": 164.88,
+        "pm10": 155.0,
+        "pm10_lower": 24.32,
+        "pm10_upper": 285.68,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 20.55,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.325,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r09_c10",
+      "properties": {
+        "cell_id": "grid_r09_c10",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 15.8,
+        "pm2_5_upper": 168.2,
+        "pm10": 155.0,
+        "pm10_lower": 18.37,
+        "pm10_upper": 291.63,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 21.95,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.425,
+              28.805
+            ],
+            [
+              77.425,
+              28.855
+            ],
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.375,
+              28.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c00",
+      "properties": {
+        "cell_id": "grid_r10_c00",
+        "centroid_lat": 28.88,
+        "centroid_lon": 76.9,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 23.55,
+        "pm2_5_upper": 160.45,
+        "pm10": 155.0,
+        "pm10_lower": 32.26,
+        "pm10_upper": 277.74,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 18.7,
+        "nearest_station": "Bawana, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.855
+            ],
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.925,
+              28.905
+            ],
+            [
+              76.875,
+              28.905
+            ],
+            [
+              76.875,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c01",
+      "properties": {
+        "cell_id": "grid_r10_c01",
+        "centroid_lat": 28.88,
+        "centroid_lon": 76.95,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 34.12,
+        "pm2_5_upper": 149.88,
+        "pm10": 155.0,
+        "pm10_lower": 51.22,
+        "pm10_upper": 258.78,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 14.26,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.975,
+              28.855
+            ],
+            [
+              76.975,
+              28.905
+            ],
+            [
+              76.925,
+              28.905
+            ],
+            [
+              76.925,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c02",
+      "properties": {
+        "cell_id": "grid_r10_c02",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.0,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 45.33,
+        "pm2_5_upper": 138.67,
+        "pm10": 155.0,
+        "pm10_lower": 71.32,
+        "pm10_upper": 238.68,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 9.56,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.855
+            ],
+            [
+              77.025,
+              28.855
+            ],
+            [
+              77.025,
+              28.905
+            ],
+            [
+              76.975,
+              28.905
+            ],
+            [
+              76.975,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c03",
+      "properties": {
+        "cell_id": "grid_r10_c03",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.05,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 55.78,
+        "pm2_5_upper": 128.22,
+        "pm10": 155.0,
+        "pm10_lower": 90.05,
+        "pm10_upper": 219.95,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 5.19,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.855
+            ],
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.075,
+              28.905
+            ],
+            [
+              77.025,
+              28.905
+            ],
+            [
+              77.025,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c04",
+      "properties": {
+        "cell_id": "grid_r10_c04",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.1,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 60.71,
+        "pm2_5_upper": 123.29,
+        "pm10": 155.0,
+        "pm10_lower": 98.89,
+        "pm10_upper": 211.11,
+        "confidence": "HIGH",
+        "dist_to_monitor_km": 3.12,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.125,
+              28.905
+            ],
+            [
+              77.075,
+              28.905
+            ],
+            [
+              77.075,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c05",
+      "properties": {
+        "cell_id": "grid_r10_c05",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.15,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 53.06,
+        "pm2_5_upper": 130.94,
+        "pm10": 155.0,
+        "pm10_lower": 85.19,
+        "pm10_upper": 224.81,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 6.32,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.175,
+              28.905
+            ],
+            [
+              77.125,
+              28.905
+            ],
+            [
+              77.125,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c06",
+      "properties": {
+        "cell_id": "grid_r10_c06",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.2,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 42.28,
+        "pm2_5_upper": 141.72,
+        "pm10": 155.0,
+        "pm10_lower": 65.84,
+        "pm10_upper": 244.16,
+        "confidence": "MODERATE",
+        "dist_to_monitor_km": 10.85,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.225,
+              28.905
+            ],
+            [
+              77.175,
+              28.905
+            ],
+            [
+              77.175,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c07",
+      "properties": {
+        "cell_id": "grid_r10_c07",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.25,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 30.99,
+        "pm2_5_upper": 153.01,
+        "pm10": 155.0,
+        "pm10_lower": 45.6,
+        "pm10_upper": 264.4,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 15.58,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.275,
+              28.905
+            ],
+            [
+              77.225,
+              28.905
+            ],
+            [
+              77.225,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c08",
+      "properties": {
+        "cell_id": "grid_r10_c08",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.3,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 19.54,
+        "pm2_5_upper": 164.46,
+        "pm10": 155.0,
+        "pm10_lower": 25.08,
+        "pm10_upper": 284.92,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 20.38,
+        "nearest_station": "Narela, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.325,
+              28.905
+            ],
+            [
+              77.275,
+              28.905
+            ],
+            [
+              77.275,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c09",
+      "properties": {
+        "cell_id": "grid_r10_c09",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.35,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 11.03,
+        "pm2_5_upper": 172.97,
+        "pm10": 155.0,
+        "pm10_lower": 9.81,
+        "pm10_upper": 300.19,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 23.95,
+        "nearest_station": "Jahangirpuri, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.375,
+              28.905
+            ],
+            [
+              77.325,
+              28.905
+            ],
+            [
+              77.325,
+              28.855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "grid_r10_c10",
+      "properties": {
+        "cell_id": "grid_r10_c10",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.4,
+        "pm2_5": 92.0,
+        "pm2_5_lower": 3.31,
+        "pm2_5_upper": 180.69,
+        "pm10": 155.0,
+        "pm10_lower": 0.0,
+        "pm10_upper": 314.03,
+        "confidence": "LOW",
+        "dist_to_monitor_km": 27.18,
+        "nearest_station": "Anand Vihar, Delhi - DPCC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.425,
+              28.855
+            ],
+            [
+              77.425,
+              28.905
+            ],
+            [
+              77.375,
+              28.905
+            ],
+            [
+              77.375,
+              28.855
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

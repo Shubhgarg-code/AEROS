@@ -1,0 +1,182 @@
+{
+  "timestamp": "2026-11-01T01:01:49.266418",
+  "propagation_simulation": {
+    "simulation_id": "prop_sim_1760963400",
+    "grid_cells": 121,
+    "duration_hours": 24,
+    "mass_diagnostics": {
+      "initial_pm25_mass_kg": 0.389,
+      "final_pm25_mass_kg": 0.458,
+      "initial_pm10_mass_kg": 0.664,
+      "final_pm10_mass_kg": 0.788
+    },
+    "peak_summary": {
+      "peak_hour": 0,
+      "peak_timestamp": "2025-10-20T18:00:00",
+      "max_pm25": 179.3800048828125,
+      "mean_pm25": 118.87000274658203
+    }
+  },
+  "scenario_comparison": [
+    {
+      "scenario_type": "baseline",
+      "scenario_name": "Baseline (Business As Usual)",
+      "peak_pm25": 443.56,
+      "delta_peak_pm25": 0.0,
+      "delta_peak_pct": 0.0,
+      "time_to_peak_hours": 33,
+      "peak_shift_hours": 0,
+      "cumulative_exposure_pm25": 21551.21,
+      "delta_cumulative_exposure_pct": 0.0,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 300.13
+    },
+    {
+      "scenario_type": "firecracker_increase",
+      "scenario_name": "Severe Firecracker Surge (+100%)",
+      "peak_pm25": 717.35,
+      "delta_peak_pm25": 273.79,
+      "delta_peak_pct": 61.73,
+      "time_to_peak_hours": 33,
+      "peak_shift_hours": 0,
+      "cumulative_exposure_pm25": 30854.08,
+      "delta_cumulative_exposure_pct": 43.17,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 429.41
+    },
+    {
+      "scenario_type": "firecracker_reduction",
+      "scenario_name": "Strict Firecracker Ban Compliance (-70%)",
+      "peak_pm25": 272.18,
+      "delta_peak_pm25": -171.38,
+      "delta_peak_pct": -38.64,
+      "time_to_peak_hours": 72,
+      "peak_shift_hours": 39,
+      "cumulative_exposure_pm25": 15039.21,
+      "delta_cumulative_exposure_pct": -30.22,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 209.64
+    },
+    {
+      "scenario_type": "traffic_increase",
+      "scenario_name": "Festive Traffic Congestion (+30%)",
+      "peak_pm25": 461.61,
+      "delta_peak_pm25": 18.05,
+      "delta_peak_pct": 4.07,
+      "time_to_peak_hours": 33,
+      "peak_shift_hours": 0,
+      "cumulative_exposure_pm25": 22862.31,
+      "delta_cumulative_exposure_pct": 6.08,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 318.44
+    },
+    {
+      "scenario_type": "traffic_reduction",
+      "scenario_name": "Odd-Even Vehicle Rationing (-40%)",
+      "peak_pm25": 419.49,
+      "delta_peak_pm25": -24.07,
+      "delta_peak_pct": -5.43,
+      "time_to_peak_hours": 33,
+      "peak_shift_hours": 0,
+      "cumulative_exposure_pm25": 19803.13,
+      "delta_cumulative_exposure_pct": -8.11,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 275.72
+    },
+    {
+      "scenario_type": "weather_flushing",
+      "scenario_name": "Atmospheric Ventilation & Flushing",
+      "peak_pm25": 351.3,
+      "delta_peak_pm25": -92.26,
+      "delta_peak_pct": -20.8,
+      "time_to_peak_hours": 33,
+      "peak_shift_hours": 0,
+      "cumulative_exposure_pm25": 14510.23,
+      "delta_cumulative_exposure_pct": -32.67,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 201.35
+    },
+    {
+      "scenario_type": "combined_mitigation",
+      "scenario_name": "Combined Policy Mitigation (Ban + Traffic Curb)",
+      "peak_pm25": 233.83,
+      "delta_peak_pm25": -209.73,
+      "delta_peak_pct": -47.28,
+      "time_to_peak_hours": 52,
+      "peak_shift_hours": 19,
+      "cumulative_exposure_pm25": 13291.13,
+      "delta_cumulative_exposure_pct": -38.33,
+      "exceedance_hours_pm25_60": 73,
+      "population_weighted_exposure_index": 185.22
+    }
+  ],
+  "baseline_metrics": {
+    "peak_pm25": 443.56,
+    "cumulative_pm25": 21551.21
+  },
+  "recovery_benchmarks": {
+    "baseline_recovery": {
+      "status": "THRESHOLD_NOT_REACHED_WITHIN_HORIZON",
+      "clearance_hours_from_peak": 64.6,
+      "confidence_interval_90": [
+        55.2,
+        74.0
+      ],
+      "half_life_hours": 14.9,
+      "effective_decay_rate": 0.0465
+    },
+    "combined_mitigation_recovery": {
+      "status": "THRESHOLD_NOT_REACHED_WITHIN_HORIZON",
+      "clearance_hours_from_peak": 48.8,
+      "confidence_interval_90": [
+        39.4,
+        58.2
+      ],
+      "half_life_hours": 14.9
+    },
+    "ventilation_sensitivity": [
+      {
+        "wind_speed_ms": 0.8,
+        "regime": "Severe Inversion & Stagnation",
+        "decay_rate_per_hour": 0.0285,
+        "half_life_hours": 24.3,
+        "time_to_clear_hours": 105.4
+      },
+      {
+        "wind_speed_ms": 1.5,
+        "regime": "Calm Winter Dispersion",
+        "decay_rate_per_hour": 0.0339,
+        "half_life_hours": 20.4,
+        "time_to_clear_hours": 88.6
+      },
+      {
+        "wind_speed_ms": 2.5,
+        "regime": "Moderate Advective Ventilation",
+        "decay_rate_per_hour": 0.0519,
+        "half_life_hours": 13.4,
+        "time_to_clear_hours": 57.9
+      },
+      {
+        "wind_speed_ms": 3.5,
+        "regime": "Moderate Advective Ventilation",
+        "decay_rate_per_hour": 0.0699,
+        "half_life_hours": 9.9,
+        "time_to_clear_hours": 43.0
+      },
+      {
+        "wind_speed_ms": 5.0,
+        "regime": "Rapid Synoptic Flushing",
+        "decay_rate_per_hour": 0.0969,
+        "half_life_hours": 7.2,
+        "time_to_clear_hours": 31.0
+      },
+      {
+        "wind_speed_ms": 7.0,
+        "regime": "Rapid Synoptic Flushing",
+        "decay_rate_per_hour": 0.1329,
+        "half_life_hours": 5.2,
+        "time_to_clear_hours": 22.6
+      }
+    ]
+  }
+}

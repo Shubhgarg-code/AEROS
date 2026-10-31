@@ -1,0 +1,450 @@
+{
+  "1h": {
+    "top_features": [
+      {
+        "feature": "pm2_5",
+        "importance": 0.67346
+      },
+      {
+        "feature": "pm10",
+        "importance": 0.12083
+      },
+      {
+        "feature": "pm2_5_lag_1h",
+        "importance": 0.07071
+      },
+      {
+        "feature": "hour_cos",
+        "importance": 0.0134
+      },
+      {
+        "feature": "hour_sin",
+        "importance": 0.01161
+      },
+      {
+        "feature": "pm10_lag_1h",
+        "importance": 0.00784
+      },
+      {
+        "feature": "sulphur_dioxide",
+        "importance": 0.0058
+      },
+      {
+        "feature": "pm2_5_lag_2h",
+        "importance": 0.0058
+      },
+      {
+        "feature": "temperature_2m",
+        "importance": 0.00567
+      },
+      {
+        "feature": "pm10_lag_2h",
+        "importance": 0.0055
+      },
+      {
+        "feature": "nitrogen_dioxide",
+        "importance": 0.0052
+      },
+      {
+        "feature": "pm2_5_rolling_mean_24h",
+        "importance": 0.00515
+      },
+      {
+        "feature": "ozone",
+        "importance": 0.00431
+      },
+      {
+        "feature": "pm2_5_rolling_mean_12h",
+        "importance": 0.00349
+      },
+      {
+        "feature": "surface_pressure",
+        "importance": 0.00317
+      },
+      {
+        "feature": "pm2_5_lag_6h",
+        "importance": 0.00314
+      },
+      {
+        "feature": "hour",
+        "importance": 0.00299
+      },
+      {
+        "feature": "wind_speed",
+        "importance": 0.00271
+      },
+      {
+        "feature": "diwali_surge_intensity",
+        "importance": 0.00264
+      },
+      {
+        "feature": "relative_humidity_2m",
+        "importance": 0.00245
+      },
+      {
+        "feature": "dayofyear",
+        "importance": 0.00235
+      },
+      {
+        "feature": "pm2_5_lag_3h",
+        "importance": 0.00228
+      },
+      {
+        "feature": "hours_to_diwali",
+        "importance": 0.0021
+      },
+      {
+        "feature": "pm2_5_lag_12h",
+        "importance": 0.00206
+      },
+      {
+        "feature": "pm10_lag_12h",
+        "importance": 0.00206
+      }
+    ],
+    "domain_importance_pct": {
+      "meteorological_transport": 1.45,
+      "historical_autoregressive_lags": 11.17,
+      "diwali_event_dynamics": 0.49,
+      "temporal_solar_cycles": 3.14,
+      "spatial_road_density": 0.0,
+      "other": 83.75
+    }
+  },
+  "6h": {
+    "top_features": [
+      {
+        "feature": "sulphur_dioxide",
+        "importance": 0.21647
+      },
+      {
+        "feature": "pm2_5_rolling_mean_24h",
+        "importance": 0.09764
+      },
+      {
+        "feature": "pm10_rolling_mean_24h",
+        "importance": 0.07503
+      },
+      {
+        "feature": "pm10_rolling_std_12h",
+        "importance": 0.05822
+      },
+      {
+        "feature": "hour_sin",
+        "importance": 0.0444
+      },
+      {
+        "feature": "ozone",
+        "importance": 0.03899
+      },
+      {
+        "feature": "hours_to_diwali",
+        "importance": 0.02729
+      },
+      {
+        "feature": "pm2_5",
+        "importance": 0.02281
+      },
+      {
+        "feature": "pm2_5_rolling_std_12h",
+        "importance": 0.02165
+      },
+      {
+        "feature": "hour",
+        "importance": 0.01931
+      },
+      {
+        "feature": "temperature_2m",
+        "importance": 0.01917
+      },
+      {
+        "feature": "pm10_rolling_mean_12h",
+        "importance": 0.01804
+      },
+      {
+        "feature": "relative_humidity_2m",
+        "importance": 0.01706
+      },
+      {
+        "feature": "pm2_5_rolling_mean_12h",
+        "importance": 0.01621
+      },
+      {
+        "feature": "pm10",
+        "importance": 0.01524
+      },
+      {
+        "feature": "dow_sin",
+        "importance": 0.01394
+      },
+      {
+        "feature": "doy_cos",
+        "importance": 0.01383
+      },
+      {
+        "feature": "aerosol_optical_depth",
+        "importance": 0.01212
+      },
+      {
+        "feature": "nitrogen_dioxide",
+        "importance": 0.012
+      },
+      {
+        "feature": "pm2_5_lag_6h",
+        "importance": 0.0117
+      },
+      {
+        "feature": "dow_cos",
+        "importance": 0.01131
+      },
+      {
+        "feature": "dayofyear",
+        "importance": 0.01128
+      },
+      {
+        "feature": "surface_pressure",
+        "importance": 0.01123
+      },
+      {
+        "feature": "dayofweek",
+        "importance": 0.01122
+      },
+      {
+        "feature": "pm2_5_lag_12h",
+        "importance": 0.0112
+      }
+    ],
+    "domain_importance_pct": {
+      "meteorological_transport": 5.74,
+      "historical_autoregressive_lags": 37.43,
+      "diwali_event_dynamics": 3.3,
+      "temporal_solar_cycles": 15.14,
+      "spatial_road_density": 0.0,
+      "other": 38.39
+    }
+  },
+  "24h": {
+    "top_features": [
+      {
+        "feature": "pm2_5",
+        "importance": 0.33138
+      },
+      {
+        "feature": "pm2_5_lag_1h",
+        "importance": 0.12966
+      },
+      {
+        "feature": "dayofyear",
+        "importance": 0.04827
+      },
+      {
+        "feature": "wind_u",
+        "importance": 0.02707
+      },
+      {
+        "feature": "doy_cos",
+        "importance": 0.02614
+      },
+      {
+        "feature": "hours_to_diwali",
+        "importance": 0.02415
+      },
+      {
+        "feature": "pm10",
+        "importance": 0.0199
+      },
+      {
+        "feature": "doy_sin",
+        "importance": 0.0191
+      },
+      {
+        "feature": "pm10_rolling_mean_24h",
+        "importance": 0.01878
+      },
+      {
+        "feature": "pm2_5_rolling_mean_6h",
+        "importance": 0.01618
+      },
+      {
+        "feature": "diwali_surge_intensity",
+        "importance": 0.01578
+      },
+      {
+        "feature": "ozone",
+        "importance": 0.0157
+      },
+      {
+        "feature": "pm2_5_rolling_mean_24h",
+        "importance": 0.01478
+      },
+      {
+        "feature": "pm2_5_lag_24h",
+        "importance": 0.01469
+      },
+      {
+        "feature": "pm10_rolling_mean_6h",
+        "importance": 0.01228
+      },
+      {
+        "feature": "pm2_5_lag_3h",
+        "importance": 0.01198
+      },
+      {
+        "feature": "pm10_lag_1h",
+        "importance": 0.01181
+      },
+      {
+        "feature": "pm10_lag_24h",
+        "importance": 0.01161
+      },
+      {
+        "feature": "pm2_5_lag_2h",
+        "importance": 0.01151
+      },
+      {
+        "feature": "dow_cos",
+        "importance": 0.01093
+      },
+      {
+        "feature": "wind_speed",
+        "importance": 0.01087
+      },
+      {
+        "feature": "dayofweek",
+        "importance": 0.01035
+      },
+      {
+        "feature": "pm2_5_rolling_std_6h",
+        "importance": 0.00989
+      },
+      {
+        "feature": "pm2_5_rolling_std_24h",
+        "importance": 0.00923
+      },
+      {
+        "feature": "surface_pressure",
+        "importance": 0.00908
+      }
+    ],
+    "domain_importance_pct": {
+      "meteorological_transport": 5.59,
+      "historical_autoregressive_lags": 32.39,
+      "diwali_event_dynamics": 4.75,
+      "temporal_solar_cycles": 13.65,
+      "spatial_road_density": 0.0,
+      "other": 43.63
+    }
+  },
+  "72h": {
+    "top_features": [
+      {
+        "feature": "pm2_5",
+        "importance": 0.20865
+      },
+      {
+        "feature": "pm2_5_lag_1h",
+        "importance": 0.16804
+      },
+      {
+        "feature": "pm10",
+        "importance": 0.06051
+      },
+      {
+        "feature": "surface_pressure",
+        "importance": 0.04866
+      },
+      {
+        "feature": "pm2_5_lag_6h",
+        "importance": 0.03355
+      },
+      {
+        "feature": "pm2_5_rolling_mean_24h",
+        "importance": 0.03283
+      },
+      {
+        "feature": "hours_to_diwali",
+        "importance": 0.0306
+      },
+      {
+        "feature": "diwali_surge_intensity",
+        "importance": 0.02915
+      },
+      {
+        "feature": "dow_sin",
+        "importance": 0.02705
+      },
+      {
+        "feature": "temperature_2m",
+        "importance": 0.02605
+      },
+      {
+        "feature": "doy_cos",
+        "importance": 0.02295
+      },
+      {
+        "feature": "dayofyear",
+        "importance": 0.02258
+      },
+      {
+        "feature": "pm2_5_lag_24h",
+        "importance": 0.01924
+      },
+      {
+        "feature": "doy_sin",
+        "importance": 0.01656
+      },
+      {
+        "feature": "pm2_5_rolling_std_24h",
+        "importance": 0.01562
+      },
+      {
+        "feature": "hour_cos",
+        "importance": 0.01464
+      },
+      {
+        "feature": "pm2_5_rolling_std_12h",
+        "importance": 0.01222
+      },
+      {
+        "feature": "ozone",
+        "importance": 0.01191
+      },
+      {
+        "feature": "pm10_rolling_mean_24h",
+        "importance": 0.0115
+      },
+      {
+        "feature": "dayofweek",
+        "importance": 0.01104
+      },
+      {
+        "feature": "hour",
+        "importance": 0.00978
+      },
+      {
+        "feature": "pm2_5_rolling_mean_12h",
+        "importance": 0.00952
+      },
+      {
+        "feature": "pm10_rolling_std_6h",
+        "importance": 0.00887
+      },
+      {
+        "feature": "pm2_5_lag_12h",
+        "importance": 0.0084
+      },
+      {
+        "feature": "pm2_5_rolling_mean_6h",
+        "importance": 0.00826
+      }
+    ],
+    "domain_importance_pct": {
+      "meteorological_transport": 8.61,
+      "historical_autoregressive_lags": 37.79,
+      "diwali_event_dynamics": 6.88,
+      "temporal_solar_cycles": 14.35,
+      "spatial_road_density": 0.0,
+      "other": 32.37
+    }
+  }
+}

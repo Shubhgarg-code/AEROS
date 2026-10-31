@@ -1,0 +1,179 @@
+city: "Delhi NCR"
+country: "India"
+timezone: "Asia/Kolkata"
+
+neighborhoods:
+  - id: "anand_vihar"
+    name: "Anand Vihar"
+    latitude: 28.6469
+    longitude: 77.3160
+    zone: "East"
+    land_use: "Transport Hub"
+    road_density_factor: 1.5
+    population_density_factor: 1.4
+
+  - id: "punjabi_bagh"
+    name: "Punjabi Bagh"
+    latitude: 28.6683
+    longitude: 77.1167
+    zone: "West"
+    land_use: "Mixed Residential-Commercial"
+    road_density_factor: 1.3
+    population_density_factor: 1.2
+
+  - id: "rk_puram"
+    name: "RK Puram"
+    latitude: 28.5660
+    longitude: 77.1767
+    zone: "South"
+    land_use: "Residential-Institutional"
+    road_density_factor: 1.0
+    population_density_factor: 1.1
+
+  - id: "ito"
+    name: "ITO"
+    latitude: 28.6289
+    longitude: 77.2407
+    zone: "Central"
+    land_use: "Commercial Traffic Hub"
+    road_density_factor: 1.6
+    population_density_factor: 1.3
+
+  - id: "bawana"
+    name: "Bawana"
+    latitude: 28.7762
+    longitude: 77.0510
+    zone: "North-West"
+    land_use: "Heavy Industrial"
+    road_density_factor: 1.1
+    population_density_factor: 0.9
+
+  - id: "narela"
+    name: "Narela"
+    latitude: 28.8526
+    longitude: 77.0931
+    zone: "North"
+    land_use: "Industrial & Grain Transit"
+    road_density_factor: 1.1
+    population_density_factor: 0.8
+
+  - id: "jahangirpuri"
+    name: "Jahangirpuri"
+    latitude: 28.7328
+    longitude: 77.1706
+    zone: "North"
+    land_use: "Dense Residential"
+    road_density_factor: 1.2
+    population_density_factor: 1.5
+
+  - id: "dwarka"
+    name: "Dwarka"
+    latitude: 28.5921
+    longitude: 77.0460
+    zone: "South-West"
+    land_use: "Planned Residential"
+    road_density_factor: 0.9
+    population_density_factor: 1.0
+
+  - id: "lodhi_road"
+    name: "Lodhi Road"
+    latitude: 28.5883
+    longitude: 77.2217
+    zone: "South-Central"
+    land_use: "Institutional Green Belt"
+    road_density_factor: 0.8
+    population_density_factor: 0.7
+
+  - id: "okhla_phase_2"
+    name: "Okhla Phase 2"
+    latitude: 28.5308
+    longitude: 77.2713
+    zone: "South-East"
+    land_use: "Industrial Complex"
+    road_density_factor: 1.3
+    population_density_factor: 1.2
+
+  - id: "rohini"
+    name: "Rohini"
+    latitude: 28.7166
+    longitude: 77.1143
+    zone: "North-West"
+    land_use: "Dense Residential"
+    road_density_factor: 1.1
+    population_density_factor: 1.3
+
+  - id: "wazirpur"
+    name: "Wazirpur"
+    latitude: 28.6999
+    longitude: 77.1654
+    zone: "North-West"
+    land_use: "Industrial Manufacturing"
+    road_density_factor: 1.4
+    population_density_factor: 1.2
+
+  - id: "mandir_marg"
+    name: "Mandir Marg"
+    latitude: 28.6341
+    longitude: 77.2005
+    zone: "Central"
+    land_use: "Ridge Buffer Institutional"
+    road_density_factor: 0.9
+    population_density_factor: 0.8
+
+  - id: "siri_fort"
+    name: "Siri Fort"
+    latitude: 28.5504
+    longitude: 77.2159
+    zone: "South"
+    land_use: "Green Residential"
+    road_density_factor: 0.8
+    population_density_factor: 0.9
+
+  - id: "connaught_place"
+    name: "Connaught Place"
+    latitude: 28.6315
+    longitude: 77.2167
+    zone: "Central"
+    land_use: "Commercial Core"
+    road_density_factor: 1.4
+    population_density_factor: 1.2
+
+diwali_windows:
+  - year: 2021
+    diwali_date: "2021-11-04"
+    start_date: "2021-10-25"
+    end_date: "2021-11-15"
+  - year: 2022
+    diwali_date: "2022-10-24"
+    start_date: "2022-10-15"
+    end_date: "2022-11-05"
+  - year: 2023
+    diwali_date: "2023-11-12"
+    start_date: "2023-11-01"
+    end_date: "2023-11-22"
+  - year: 2024
+    diwali_date: "2024-10-31"
+    start_date: "2024-10-22"
+    end_date: "2024-11-12"
+  - year: 2025
+    diwali_date: "2025-10-20"
+    start_date: "2025-10-10"
+    end_date: "2025-10-31"
+
+targets:
+  - "pm2_5"
+  - "pm10"
+
+auxiliary_pollutants:
+  - "nitrogen_dioxide"
+  - "sulphur_dioxide"
+  - "ozone"
+  - "aerosol_optical_depth"
+
+meteorological_features:
+  - "temperature_2m"
+  - "relative_humidity_2m"
+  - "surface_pressure"
+  - "wind_speed_10m"
+  - "wind_direction_10m"
+  - "precipitation"

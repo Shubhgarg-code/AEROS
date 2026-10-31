@@ -1,0 +1,120 @@
+{
+  "evaluation_timestamp": "2026-11-01T00:24:37.025407",
+  "horizon_hours": 24,
+  "test_samples": 6480,
+  "comparison_table": [
+    {
+      "model": "Persistence",
+      "pm25_mae": 21.497,
+      "pm25_rmse": 28.799,
+      "pm25_r2": 0.0794,
+      "pm25_mape": 26.2,
+      "pm10_mae": 56.38,
+      "pm10_rmse": 79.039,
+      "pm10_r2": -0.3361,
+      "pm10_mape": 35.3
+    },
+    {
+      "model": "Historical Mean",
+      "pm25_mae": 25.19,
+      "pm25_rmse": 29.205,
+      "pm25_r2": 0.0532,
+      "pm25_mape": 37.49,
+      "pm10_mae": 51.358,
+      "pm10_rmse": 71.941,
+      "pm10_r2": -0.1069,
+      "pm10_mape": 27.6
+    },
+    {
+      "model": "Transformer",
+      "pm25_mae": 22.971,
+      "pm25_rmse": 29.827,
+      "pm25_r2": 0.0124,
+      "pm25_mape": 30.82,
+      "pm10_mae": 55.176,
+      "pm10_rmse": 76.962,
+      "pm10_r2": -0.2668,
+      "pm10_mape": 28.01
+    },
+    {
+      "model": "Ensemble",
+      "pm25_mae": 24.637,
+      "pm25_rmse": 30.77,
+      "pm25_r2": -0.051,
+      "pm25_mape": 34.77,
+      "pm10_mae": 53.562,
+      "pm10_rmse": 72.105,
+      "pm10_r2": -0.112,
+      "pm10_mape": 28.15
+    },
+    {
+      "model": "Diurnal Seasonal",
+      "pm25_mae": 23.658,
+      "pm25_rmse": 31.062,
+      "pm25_r2": -0.071,
+      "pm25_mape": 27.98,
+      "pm10_mae": 66.754,
+      "pm10_rmse": 92.391,
+      "pm10_r2": -0.8256,
+      "pm10_mape": 38.74
+    },
+    {
+      "model": "LSTM",
+      "pm25_mae": 25.197,
+      "pm25_rmse": 32.918,
+      "pm25_r2": -0.2028,
+      "pm25_mape": 34.3,
+      "pm10_mae": 53.562,
+      "pm10_rmse": 72.105,
+      "pm10_r2": -0.112,
+      "pm10_mape": 28.15
+    },
+    {
+      "model": "XGBoost",
+      "pm25_mae": 27.269,
+      "pm25_rmse": 33.812,
+      "pm25_r2": -0.2691,
+      "pm25_mape": 39.44,
+      "pm10_mae": 51.016,
+      "pm10_rmse": 69.394,
+      "pm10_r2": -0.0299,
+      "pm10_mape": 28.41
+    },
+    {
+      "model": "GRU",
+      "pm25_mae": 33.192,
+      "pm25_rmse": 41.638,
+      "pm25_r2": -0.9245,
+      "pm25_mape": 44.7,
+      "pm10_mae": 53.592,
+      "pm10_rmse": 70.199,
+      "pm10_r2": -0.0539,
+      "pm10_mape": 30.33
+    }
+  ],
+  "diwali_phase_metrics": {
+    "xgboost": {
+      "pre_diwali": {
+        "mae": 27.892,
+        "rmse": 34.064,
+        "r2": -0.3666,
+        "mape": 46.8,
+        "samples": 3180
+      },
+      "diwali_peak": {
+        "mae": 24.631,
+        "rmse": 29.456,
+        "r2": 0.1573,
+        "mape": 23.84,
+        "samples": 735
+      },
+      "post_diwali": {
+        "mae": 27.252,
+        "rmse": 34.657,
+        "r2": -0.5359,
+        "mape": 34.78,
+        "samples": 2565
+      }
+    }
+  }
+}

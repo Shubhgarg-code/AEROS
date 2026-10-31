@@ -1,0 +1,68 @@
+temporal_model:
+  lookback_hours: 24
+  forecast_horizons: [1, 3, 6, 12, 24, 48, 72]
+  primary_horizon: 24
+  xgboost:
+    n_estimators: 250
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.85
+    colsample_bytree: 0.85
+    random_state: 42
+  lstm:
+    hidden_dim: 64
+    num_layers: 2
+    dropout: 0.2
+    learning_rate: 0.001
+    epochs: 20
+    batch_size: 64
+  transformer:
+    d_model: 64
+    nhead: 4
+    num_layers: 2
+    dim_feedforward: 128
+    dropout: 0.1
+    learning_rate: 0.0008
+    epochs: 25
+    batch_size: 64
+
+spatial_model:
+  idw_power: 2.0
+  kriging_variogram: "spherical"
+  gat:
+    in_channels: 16
+    hidden_channels: 32
+    out_channels: 2
+    heads: 4
+    dropout: 0.1
+    learning_rate: 0.003
+    epochs: 30
+
+propagation_model:
+  diffusion_coefficient: 0.15
+  decay_rate: 0.02
+  wind_transport_scale: 0.4
+  advection_time_step_hours: 1.0
+
+simulation_scenarios:
+  firecracker_burst_scalars:
+    zero_emission: 0.0
+    strict_ban: 0.3
+    moderate_compliance: 0.6
+    baseline_observed: 1.0
+    severe_violation: 2.0
+  traffic_reduction_scalars:
+    heavy_curb: 0.5
+    moderate_curb: 0.75
+    normal: 1.0
+    elevated_congestion: 1.3
+
+recovery_model:
+  pm25_safe_threshold: 60.0
+  pm10_safe_threshold: 100.0
+  conformal_alpha: 0.10
+
+mitigation_optimizer:
+  max_traffic_curb_pct: 50.0
+  max_industrial_curb_pct: 60.0
+  friction_weight: 0.35

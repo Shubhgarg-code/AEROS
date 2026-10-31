@@ -1,0 +1,64 @@
+{
+  "evaluation_timestamp": "2026-11-01T00:39:03.918656",
+  "holdout_stations": [
+    "dwarka",
+    "jahangirpuri",
+    "mandir_marg"
+  ],
+  "comparison_table": [
+    {
+      "model": "Inverse Distance Weighting (IDW)",
+      "pm25_mae": 3.623,
+      "pm25_rmse": 6.755,
+      "pm25_r2": 0.9746,
+      "pm10_mae": 7.715,
+      "pm10_rmse": 14.864,
+      "pm10_r2": 0.9491
+    },
+    {
+      "model": "Spatial XGBoost Baseline",
+      "pm25_mae": 0.149,
+      "pm25_rmse": 0.285,
+      "pm25_r2": 1.0,
+      "pm10_mae": 0.262,
+      "pm10_rmse": 0.527,
+      "pm10_r2": 0.9999
+    },
+    {
+      "model": "Graph Convolutional Network (GCN)",
+      "pm25_mae": 11.328,
+      "pm25_rmse": 16.965,
+      "pm25_r2": 0.8302,
+      "pm10_mae": 21.12,
+      "pm10_rmse": 30.169,
+      "pm10_r2": 0.77
+    },
+    {
+      "model": "Graph Attention Network (GAT)",
+      "pm25_mae": 13.391,
+      "pm25_rmse": 18.526,
+      "pm25_r2": 0.7975,
+      "pm10_mae": 24.503,
+      "pm10_rmse": 33.496,
+      "pm10_r2": 0.7165
+    },
+    {
+      "model": "GraphSAGE (Inductive)",
+      "pm25_mae": 10.458,
+      "pm25_rmse": 15.765,
+      "pm25_r2": 0.8534,
+      "pm10_mae": 22.015,
+      "pm10_rmse": 31.318,
+      "pm10_r2": 0.7521
+    },
+    {
+      "model": "Spatiotemporal GNN (ST-GNN)",
+      "pm25_mae": 14.875,
+      "pm25_rmse": 22.732,
+      "pm25_r2": 0.7004,
+      "pm10_mae": 31.285,
+      "pm10_rmse": 39.409,
+      "pm10_r2": 0.6125
+    }
+  ]
+}

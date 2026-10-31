@@ -1,0 +1,27 @@
+split:
+  train_years: [2021, 2022, 2023]
+  val_years: [2024]
+  test_years: [2025]
+  spatial_holdout_neighborhoods:
+    - "dwarka"
+    - "jahangirpuri"
+    - "mandir_marg"
+
+scaler:
+  type: "robust"
+  feature_range: [-1, 1]
+
+paths:
+  raw_data_dir: "aeros/data/raw"
+  processed_data_dir: "aeros/data/processed"
+  models_dir: "aeros/artifacts/models"
+  scalers_dir: "aeros/artifacts/scalers"
+  reports_dir: "aeros/artifacts/reports"
+
+evaluation:
+  metrics:
+    - "mae"
+    - "rmse"
+    - "r2"
+    - "mape"
+  horizons: [1, 3, 6, 12, 24, 48, 72]

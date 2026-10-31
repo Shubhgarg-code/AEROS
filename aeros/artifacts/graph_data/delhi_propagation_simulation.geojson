@@ -1,0 +1,4851 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.355
+            ],
+            [
+              76.925,
+              28.355
+            ],
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.875,
+              28.405
+            ],
+            [
+              76.875,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c00",
+        "centroid_lat": 28.38,
+        "centroid_lon": 76.9,
+        "pm25": 116.08999633789062,
+        "pm10": 198.1300048828125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.355
+            ],
+            [
+              76.975,
+              28.355
+            ],
+            [
+              76.975,
+              28.405
+            ],
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.925,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c01",
+        "centroid_lat": 28.38,
+        "centroid_lon": 76.95,
+        "pm25": 115.61000061035156,
+        "pm10": 197.41000366210938,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.355
+            ],
+            [
+              77.025,
+              28.355
+            ],
+            [
+              77.025,
+              28.405
+            ],
+            [
+              76.975,
+              28.405
+            ],
+            [
+              76.975,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c02",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.0,
+        "pm25": 114.91000366210938,
+        "pm10": 196.3800048828125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.355
+            ],
+            [
+              77.075,
+              28.355
+            ],
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.025,
+              28.405
+            ],
+            [
+              77.025,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c03",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.05,
+        "pm25": 113.94999694824219,
+        "pm10": 195.02000427246094,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.355
+            ],
+            [
+              77.125,
+              28.355
+            ],
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.075,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c04",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.1,
+        "pm25": 112.81999969482422,
+        "pm10": 193.4499969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.355
+            ],
+            [
+              77.175,
+              28.355
+            ],
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.125,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c05",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.15,
+        "pm25": 111.7699966430664,
+        "pm10": 192.00999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.355
+            ],
+            [
+              77.225,
+              28.355
+            ],
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.175,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c06",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.2,
+        "pm25": 111.11000061035156,
+        "pm10": 191.14999389648438,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.355
+            ],
+            [
+              77.275,
+              28.355
+            ],
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.225,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c07",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.25,
+        "pm25": 111.1500015258789,
+        "pm10": 191.32000732421875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.355
+            ],
+            [
+              77.325,
+              28.355
+            ],
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.275,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c08",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.3,
+        "pm25": 112.0199966430664,
+        "pm10": 192.72000122070312,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.355
+            ],
+            [
+              77.375,
+              28.355
+            ],
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.325,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c09",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.35,
+        "pm25": 113.55999755859375,
+        "pm10": 195.11000061035156,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.355
+            ],
+            [
+              77.425,
+              28.355
+            ],
+            [
+              77.425,
+              28.405
+            ],
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.375,
+              28.355
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r00_c10",
+        "centroid_lat": 28.38,
+        "centroid_lon": 77.4,
+        "pm25": 115.33000183105469,
+        "pm10": 197.8300018310547,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.405
+            ],
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.875,
+              28.455
+            ],
+            [
+              76.875,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c00",
+        "centroid_lat": 28.43,
+        "centroid_lon": 76.9,
+        "pm25": 116.37999725341797,
+        "pm10": 198.4199981689453,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.405
+            ],
+            [
+              76.975,
+              28.405
+            ],
+            [
+              76.975,
+              28.455
+            ],
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.925,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c01",
+        "centroid_lat": 28.43,
+        "centroid_lon": 76.95,
+        "pm25": 115.94000244140625,
+        "pm10": 197.69000244140625,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.405
+            ],
+            [
+              77.025,
+              28.405
+            ],
+            [
+              77.025,
+              28.455
+            ],
+            [
+              76.975,
+              28.455
+            ],
+            [
+              76.975,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c02",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.0,
+        "pm25": 115.11000061035156,
+        "pm10": 196.4499969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.405
+            ],
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.025,
+              28.455
+            ],
+            [
+              77.025,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c03",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.05,
+        "pm25": 113.72000122070312,
+        "pm10": 194.49000549316406,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.405
+            ],
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.075,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c04",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.1,
+        "pm25": 111.80000305175781,
+        "pm10": 191.80999755859375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.405
+            ],
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.125,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c05",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.15,
+        "pm25": 109.79000091552734,
+        "pm10": 189.00999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.405
+            ],
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.175,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c06",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.2,
+        "pm25": 108.3499984741211,
+        "pm10": 187.02999877929688,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.405
+            ],
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.225,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c07",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.25,
+        "pm25": 108.05999755859375,
+        "pm10": 186.74000549316406,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.405
+            ],
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.275,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c08",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.3,
+        "pm25": 109.47000122070312,
+        "pm10": 188.9499969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.405
+            ],
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.325,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c09",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.35,
+        "pm25": 112.31999969482422,
+        "pm10": 193.32000732421875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.405
+            ],
+            [
+              77.425,
+              28.405
+            ],
+            [
+              77.425,
+              28.455
+            ],
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.375,
+              28.405
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r01_c10",
+        "centroid_lat": 28.43,
+        "centroid_lon": 77.4,
+        "pm25": 115.30999755859375,
+        "pm10": 197.8800048828125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.455
+            ],
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.875,
+              28.505
+            ],
+            [
+              76.875,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c00",
+        "centroid_lat": 28.48,
+        "centroid_lon": 76.9,
+        "pm25": 116.91000366210938,
+        "pm10": 199.00999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.455
+            ],
+            [
+              76.975,
+              28.455
+            ],
+            [
+              76.975,
+              28.505
+            ],
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.925,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c01",
+        "centroid_lat": 28.48,
+        "centroid_lon": 76.95,
+        "pm25": 116.72000122070312,
+        "pm10": 198.5399932861328,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.455
+            ],
+            [
+              77.025,
+              28.455
+            ],
+            [
+              77.025,
+              28.505
+            ],
+            [
+              76.975,
+              28.505
+            ],
+            [
+              76.975,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c02",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.0,
+        "pm25": 116.05000305175781,
+        "pm10": 197.44000244140625,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.455
+            ],
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.025,
+              28.505
+            ],
+            [
+              77.025,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c03",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.05,
+        "pm25": 114.27999877929688,
+        "pm10": 194.92999267578125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.455
+            ],
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.075,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c04",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.1,
+        "pm25": 110.95999908447266,
+        "pm10": 190.36000061035156,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.455
+            ],
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.125,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c05",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.15,
+        "pm25": 106.94000244140625,
+        "pm10": 184.72999572753906,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.455
+            ],
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.175,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c06",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.2,
+        "pm25": 103.95999908447266,
+        "pm10": 180.50999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.455
+            ],
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.225,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c07",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.25,
+        "pm25": 102.41999816894531,
+        "pm10": 178.3800048828125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.455
+            ],
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.275,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c08",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.3,
+        "pm25": 104.66000366210938,
+        "pm10": 181.83999633789062,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.455
+            ],
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.325,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c09",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.35,
+        "pm25": 111.22000122070312,
+        "pm10": 191.7899932861328,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.455
+            ],
+            [
+              77.425,
+              28.455
+            ],
+            [
+              77.425,
+              28.505
+            ],
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.375,
+              28.455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r02_c10",
+        "centroid_lat": 28.48,
+        "centroid_lon": 77.4,
+        "pm25": 116.44000244140625,
+        "pm10": 199.72000122070312,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.505
+            ],
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.875,
+              28.555
+            ],
+            [
+              76.875,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c00",
+        "centroid_lat": 28.53,
+        "centroid_lon": 76.9,
+        "pm25": 117.58000183105469,
+        "pm10": 199.8000030517578,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.505
+            ],
+            [
+              76.975,
+              28.505
+            ],
+            [
+              76.975,
+              28.555
+            ],
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.925,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c01",
+        "centroid_lat": 28.53,
+        "centroid_lon": 76.95,
+        "pm25": 118.01000213623047,
+        "pm10": 200.02999877929688,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.505
+            ],
+            [
+              77.025,
+              28.505
+            ],
+            [
+              77.025,
+              28.555
+            ],
+            [
+              76.975,
+              28.555
+            ],
+            [
+              76.975,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c02",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.0,
+        "pm25": 118.4000015258789,
+        "pm10": 200.05999755859375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.505
+            ],
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.025,
+              28.555
+            ],
+            [
+              77.025,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c03",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.05,
+        "pm25": 117.18000030517578,
+        "pm10": 198.22000122070312,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.505
+            ],
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.075,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c04",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.1,
+        "pm25": 111.44000244140625,
+        "pm10": 190.67999267578125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.505
+            ],
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.125,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c05",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.15,
+        "pm25": 102.44000244140625,
+        "pm10": 178.07000732421875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.505
+            ],
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.175,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c06",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.2,
+        "pm25": 96.33000183105469,
+        "pm10": 169.25999450683594,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.505
+            ],
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.225,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c07",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.25,
+        "pm25": 94.69999694824219,
+        "pm10": 166.94000244140625,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.505
+            ],
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.275,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c08",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.3,
+        "pm25": 98.45999908447266,
+        "pm10": 172.64999389648438,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.505
+            ],
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.325,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c09",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.35,
+        "pm25": 114.13999938964844,
+        "pm10": 196.3699951171875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.505
+            ],
+            [
+              77.425,
+              28.505
+            ],
+            [
+              77.425,
+              28.555
+            ],
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.375,
+              28.505
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r03_c10",
+        "centroid_lat": 28.53,
+        "centroid_lon": 77.4,
+        "pm25": 121.0199966430664,
+        "pm10": 206.86000061035156,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.555
+            ],
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.875,
+              28.605
+            ],
+            [
+              76.875,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c00",
+        "centroid_lat": 28.58,
+        "centroid_lon": 76.9,
+        "pm25": 118.0,
+        "pm10": 200.3800048828125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.555
+            ],
+            [
+              76.975,
+              28.555
+            ],
+            [
+              76.975,
+              28.605
+            ],
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.925,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c01",
+        "centroid_lat": 28.58,
+        "centroid_lon": 76.95,
+        "pm25": 119.16000366210938,
+        "pm10": 201.4499969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.555
+            ],
+            [
+              77.025,
+              28.555
+            ],
+            [
+              77.025,
+              28.605
+            ],
+            [
+              76.975,
+              28.605
+            ],
+            [
+              76.975,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c02",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.0,
+        "pm25": 121.55999755859375,
+        "pm10": 203.47999572753906,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.555
+            ],
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.025,
+              28.605
+            ],
+            [
+              77.025,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c03",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.05,
+        "pm25": 124.25,
+        "pm10": 205.6199951171875,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.555
+            ],
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.075,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c04",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.1,
+        "pm25": 116.33000183105469,
+        "pm10": 197.27000427246094,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.555
+            ],
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.125,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c05",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.15,
+        "pm25": 102.48999786376953,
+        "pm10": 178.05999755859375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.555
+            ],
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.175,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c06",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.2,
+        "pm25": 97.4800033569336,
+        "pm10": 170.8000030517578,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.555
+            ],
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.225,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c07",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.25,
+        "pm25": 103.81999969482422,
+        "pm10": 180.25,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.555
+            ],
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.275,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c08",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.3,
+        "pm25": 120.12999725341797,
+        "pm10": 205.42999267578125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.555
+            ],
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.325,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c09",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.35,
+        "pm25": 131.97000122070312,
+        "pm10": 223.99000549316406,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.555
+            ],
+            [
+              77.425,
+              28.555
+            ],
+            [
+              77.425,
+              28.605
+            ],
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.375,
+              28.555
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r04_c10",
+        "centroid_lat": 28.58,
+        "centroid_lon": 77.4,
+        "pm25": 132.1199951171875,
+        "pm10": 224.13999938964844,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.605
+            ],
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.875,
+              28.655
+            ],
+            [
+              76.875,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c00",
+        "centroid_lat": 28.63,
+        "centroid_lon": 76.9,
+        "pm25": 117.66000366210938,
+        "pm10": 200.11000061035156,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.605
+            ],
+            [
+              76.975,
+              28.605
+            ],
+            [
+              76.975,
+              28.655
+            ],
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.925,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c01",
+        "centroid_lat": 28.63,
+        "centroid_lon": 76.95,
+        "pm25": 118.86000061035156,
+        "pm10": 201.42999267578125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.605
+            ],
+            [
+              77.025,
+              28.605
+            ],
+            [
+              77.025,
+              28.655
+            ],
+            [
+              76.975,
+              28.655
+            ],
+            [
+              76.975,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c02",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.0,
+        "pm25": 121.04000091552734,
+        "pm10": 203.83999633789062,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.605
+            ],
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.025,
+              28.655
+            ],
+            [
+              77.025,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c03",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.05,
+        "pm25": 123.52999877929688,
+        "pm10": 207.1699981689453,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.605
+            ],
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.075,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c04",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.1,
+        "pm25": 128.0399932861328,
+        "pm10": 215.5800018310547,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.605
+            ],
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.125,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c05",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.15,
+        "pm25": 120.55999755859375,
+        "pm10": 204.3800048828125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.605
+            ],
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.175,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c06",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.2,
+        "pm25": 126.86000061035156,
+        "pm10": 210.33999633789062,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.605
+            ],
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.225,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c07",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.25,
+        "pm25": 135.22000122070312,
+        "pm10": 224.49000549316406,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.605
+            ],
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.275,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c08",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.3,
+        "pm25": 179.3800048828125,
+        "pm10": 298.3399963378906,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.605
+            ],
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.325,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c09",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.35,
+        "pm25": 174.9499969482422,
+        "pm10": 291.6000061035156,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.605
+            ],
+            [
+              77.425,
+              28.605
+            ],
+            [
+              77.425,
+              28.655
+            ],
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.375,
+              28.605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r05_c10",
+        "centroid_lat": 28.63,
+        "centroid_lon": 77.4,
+        "pm25": 146.6199951171875,
+        "pm10": 246.85000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.655
+            ],
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.875,
+              28.705
+            ],
+            [
+              76.875,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c00",
+        "centroid_lat": 28.68,
+        "centroid_lon": 76.9,
+        "pm25": 116.31999969482422,
+        "pm10": 198.47999572753906,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.655
+            ],
+            [
+              76.975,
+              28.655
+            ],
+            [
+              76.975,
+              28.705
+            ],
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.925,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c01",
+        "centroid_lat": 28.68,
+        "centroid_lon": 76.95,
+        "pm25": 116.69999694824219,
+        "pm10": 198.9499969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.655
+            ],
+            [
+              77.025,
+              28.655
+            ],
+            [
+              77.025,
+              28.705
+            ],
+            [
+              76.975,
+              28.705
+            ],
+            [
+              76.975,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c02",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.0,
+        "pm25": 117.86000061035156,
+        "pm10": 200.66000366210938,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.655
+            ],
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.025,
+              28.705
+            ],
+            [
+              77.025,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c03",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.05,
+        "pm25": 121.55000305175781,
+        "pm10": 206.44000244140625,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.655
+            ],
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.075,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c04",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.1,
+        "pm25": 139.8800048828125,
+        "pm10": 234.08999633789062,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.655
+            ],
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.125,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c05",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.15,
+        "pm25": 118.70999908447266,
+        "pm10": 202.72999572753906,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.655
+            ],
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.175,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c06",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.2,
+        "pm25": 119.52999877929688,
+        "pm10": 203.57000732421875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.655
+            ],
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.225,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c07",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.25,
+        "pm25": 130.02999877929688,
+        "pm10": 219.66000366210938,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.655
+            ],
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.275,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c08",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.3,
+        "pm25": 164.82000732421875,
+        "pm10": 275.239990234375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.655
+            ],
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.325,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c09",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.35,
+        "pm25": 167.27999877929688,
+        "pm10": 279.3599853515625,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.655
+            ],
+            [
+              77.425,
+              28.655
+            ],
+            [
+              77.425,
+              28.705
+            ],
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.375,
+              28.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r06_c10",
+        "centroid_lat": 28.68,
+        "centroid_lon": 77.4,
+        "pm25": 147.64999389648438,
+        "pm10": 248.3699951171875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.705
+            ],
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.875,
+              28.755
+            ],
+            [
+              76.875,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c00",
+        "centroid_lat": 28.73,
+        "centroid_lon": 76.9,
+        "pm25": 114.22000122070312,
+        "pm10": 195.6699981689453,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.705
+            ],
+            [
+              76.975,
+              28.705
+            ],
+            [
+              76.975,
+              28.755
+            ],
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.925,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c01",
+        "centroid_lat": 28.73,
+        "centroid_lon": 76.95,
+        "pm25": 112.7699966430664,
+        "pm10": 193.57000732421875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.705
+            ],
+            [
+              77.025,
+              28.705
+            ],
+            [
+              77.025,
+              28.755
+            ],
+            [
+              76.975,
+              28.755
+            ],
+            [
+              76.975,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c02",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.0,
+        "pm25": 110.11000061035156,
+        "pm10": 189.75999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.705
+            ],
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.025,
+              28.755
+            ],
+            [
+              77.025,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c03",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.05,
+        "pm25": 108.58999633789062,
+        "pm10": 187.6999969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.705
+            ],
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.075,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c04",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.1,
+        "pm25": 102.33999633789062,
+        "pm10": 178.57000732421875,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.705
+            ],
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.125,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c05",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.15,
+        "pm25": 151.3300018310547,
+        "pm10": 254.11000061035156,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.705
+            ],
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.175,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c06",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.2,
+        "pm25": 151.75999450683594,
+        "pm10": 254.5399932861328,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.705
+            ],
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.225,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c07",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.25,
+        "pm25": 133.77999877929688,
+        "pm10": 226.22000122070312,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.705
+            ],
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.275,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c08",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.3,
+        "pm25": 138.5,
+        "pm10": 233.6999969482422,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.705
+            ],
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.325,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c09",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.35,
+        "pm25": 141.97999572753906,
+        "pm10": 239.30999755859375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.705
+            ],
+            [
+              77.425,
+              28.705
+            ],
+            [
+              77.425,
+              28.755
+            ],
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.375,
+              28.705
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r07_c10",
+        "centroid_lat": 28.73,
+        "centroid_lon": 77.4,
+        "pm25": 138.9199981689453,
+        "pm10": 234.5500030517578,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.755
+            ],
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.875,
+              28.805
+            ],
+            [
+              76.875,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c00",
+        "centroid_lat": 28.78,
+        "centroid_lon": 76.9,
+        "pm25": 112.29000091552734,
+        "pm10": 193.0,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.755
+            ],
+            [
+              76.975,
+              28.755
+            ],
+            [
+              76.975,
+              28.805
+            ],
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.925,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c01",
+        "centroid_lat": 28.78,
+        "centroid_lon": 76.95,
+        "pm25": 109.25,
+        "pm10": 188.5500030517578,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.755
+            ],
+            [
+              77.025,
+              28.755
+            ],
+            [
+              77.025,
+              28.805
+            ],
+            [
+              76.975,
+              28.805
+            ],
+            [
+              76.975,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c02",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.0,
+        "pm25": 102.2699966430664,
+        "pm10": 178.27000427246094,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.755
+            ],
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.025,
+              28.805
+            ],
+            [
+              77.025,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c03",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.05,
+        "pm25": 90.26000213623047,
+        "pm10": 160.3800048828125,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.755
+            ],
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.075,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c04",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.1,
+        "pm25": 109.04000091552734,
+        "pm10": 188.75999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.755
+            ],
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.125,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c05",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.15,
+        "pm25": 130.7899932861328,
+        "pm10": 222.14999389648438,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.755
+            ],
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.175,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c06",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.2,
+        "pm25": 137.49000549316406,
+        "pm10": 232.35000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.755
+            ],
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.225,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c07",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.25,
+        "pm25": 132.16000366210938,
+        "pm10": 223.89999389648438,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.755
+            ],
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.275,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c08",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.3,
+        "pm25": 131.75999450683594,
+        "pm10": 223.24000549316406,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.755
+            ],
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.325,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c09",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.35,
+        "pm25": 132.77000427246094,
+        "pm10": 224.83999633789062,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.755
+            ],
+            [
+              77.425,
+              28.755
+            ],
+            [
+              77.425,
+              28.805
+            ],
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.375,
+              28.755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r08_c10",
+        "centroid_lat": 28.78,
+        "centroid_lon": 77.4,
+        "pm25": 132.44000244140625,
+        "pm10": 224.35000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.805
+            ],
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.875,
+              28.855
+            ],
+            [
+              76.875,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c00",
+        "centroid_lat": 28.83,
+        "centroid_lon": 76.9,
+        "pm25": 111.41000366210938,
+        "pm10": 191.8000030517578,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.805
+            ],
+            [
+              76.975,
+              28.805
+            ],
+            [
+              76.975,
+              28.855
+            ],
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.925,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c01",
+        "centroid_lat": 28.83,
+        "centroid_lon": 76.95,
+        "pm25": 108.52999877929688,
+        "pm10": 187.58999633789062,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.805
+            ],
+            [
+              77.025,
+              28.805
+            ],
+            [
+              77.025,
+              28.855
+            ],
+            [
+              76.975,
+              28.855
+            ],
+            [
+              76.975,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c02",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.0,
+        "pm25": 104.18000030517578,
+        "pm10": 181.17999267578125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.805
+            ],
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.025,
+              28.855
+            ],
+            [
+              77.025,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c03",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.05,
+        "pm25": 99.44999694824219,
+        "pm10": 174.17999267578125,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.805
+            ],
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.075,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c04",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.1,
+        "pm25": 96.12000274658203,
+        "pm10": 169.22999572753906,
+        "is_monitored": true,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.805
+            ],
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.125,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c05",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.15,
+        "pm25": 111.4000015258789,
+        "pm10": 192.3699951171875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.805
+            ],
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.175,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c06",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.2,
+        "pm25": 122.36000061035156,
+        "pm10": 208.97999572753906,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.805
+            ],
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.225,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c07",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.25,
+        "pm25": 125.87000274658203,
+        "pm10": 214.22999572753906,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.805
+            ],
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.275,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c08",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.3,
+        "pm25": 127.26000213623047,
+        "pm10": 216.30999755859375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.805
+            ],
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.325,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c09",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.35,
+        "pm25": 128.1699981689453,
+        "pm10": 217.69000244140625,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.805
+            ],
+            [
+              77.425,
+              28.805
+            ],
+            [
+              77.425,
+              28.855
+            ],
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.375,
+              28.805
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r09_c10",
+        "centroid_lat": 28.83,
+        "centroid_lon": 77.4,
+        "pm25": 128.44000244140625,
+        "pm10": 218.10000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.875,
+              28.855
+            ],
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.925,
+              28.905
+            ],
+            [
+              76.875,
+              28.905
+            ],
+            [
+              76.875,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c00",
+        "centroid_lat": 28.88,
+        "centroid_lon": 76.9,
+        "pm25": 111.4800033569336,
+        "pm10": 191.9600067138672,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.925,
+              28.855
+            ],
+            [
+              76.975,
+              28.855
+            ],
+            [
+              76.975,
+              28.905
+            ],
+            [
+              76.925,
+              28.905
+            ],
+            [
+              76.925,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c01",
+        "centroid_lat": 28.88,
+        "centroid_lon": 76.95,
+        "pm25": 109.18000030517578,
+        "pm10": 188.60000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.975,
+              28.855
+            ],
+            [
+              77.025,
+              28.855
+            ],
+            [
+              77.025,
+              28.905
+            ],
+            [
+              76.975,
+              28.905
+            ],
+            [
+              76.975,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c02",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.0,
+        "pm25": 105.7300033569336,
+        "pm10": 183.50999450683594,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.025,
+              28.855
+            ],
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.075,
+              28.905
+            ],
+            [
+              77.025,
+              28.905
+            ],
+            [
+              77.025,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c03",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.05,
+        "pm25": 99.7699966430664,
+        "pm10": 174.64999389648438,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.075,
+              28.855
+            ],
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.125,
+              28.905
+            ],
+            [
+              77.075,
+              28.905
+            ],
+            [
+              77.075,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c04",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.1,
+        "pm25": 95.55000305175781,
+        "pm10": 168.35000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.125,
+              28.855
+            ],
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.175,
+              28.905
+            ],
+            [
+              77.125,
+              28.905
+            ],
+            [
+              77.125,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c05",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.15,
+        "pm25": 106.12999725341797,
+        "pm10": 184.30999755859375,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.175,
+              28.855
+            ],
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.225,
+              28.905
+            ],
+            [
+              77.175,
+              28.905
+            ],
+            [
+              77.175,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c06",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.2,
+        "pm25": 116.08999633789062,
+        "pm10": 199.33999633789062,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.225,
+              28.855
+            ],
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.275,
+              28.905
+            ],
+            [
+              77.225,
+              28.905
+            ],
+            [
+              77.225,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c07",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.25,
+        "pm25": 121.18000030517578,
+        "pm10": 207.02000427246094,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.275,
+              28.855
+            ],
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.325,
+              28.905
+            ],
+            [
+              77.275,
+              28.905
+            ],
+            [
+              77.275,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c08",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.3,
+        "pm25": 123.69999694824219,
+        "pm10": 210.8300018310547,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.325,
+              28.855
+            ],
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.375,
+              28.905
+            ],
+            [
+              77.325,
+              28.905
+            ],
+            [
+              77.325,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c09",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.35,
+        "pm25": 125.05000305175781,
+        "pm10": 212.8699951171875,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.375,
+              28.855
+            ],
+            [
+              77.425,
+              28.855
+            ],
+            [
+              77.425,
+              28.905
+            ],
+            [
+              77.375,
+              28.905
+            ],
+            [
+              77.375,
+              28.855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "cell_id": "grid_r10_c10",
+        "centroid_lat": 28.88,
+        "centroid_lon": 77.4,
+        "pm25": 125.69999694824219,
+        "pm10": 213.85000610351562,
+        "is_monitored": false,
+        "step_hour": 0,
+        "timestamp": "2025-10-20T18:00:00"
+      }
+    }
+  ],
+  "properties": {
+    "timestamp": "2025-10-20T18:00:00",
+    "step_hour": 0,
+    "mean_pm25": 118.87000274658203,
+    "max_pm25": 179.3800048828125
+  }
+}

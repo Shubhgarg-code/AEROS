@@ -1,0 +1,200 @@
+{
+  "report_generated_at": "2026-10-31T23:58:33.120801",
+  "total_records_collected": 38520,
+  "number_of_monitoring_stations": 15,
+  "date_coverage": {
+    "start": "2021-10-25 00:00:00",
+    "end": "2025-10-28 23:00:00",
+    "historical_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "dataset_splits": {
+    "train_records": 23760,
+    "val_records": 7920,
+    "test_records": 6840,
+    "train_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "val_years": [
+      2024
+    ],
+    "test_years": [
+      2025
+    ]
+  },
+  "spatial_holdouts": {
+    "holdout_neighborhood_count": 3,
+    "holdout_neighborhoods": [
+      "dwarka",
+      "jahangirpuri",
+      "mandir_marg"
+    ],
+    "monitored_station_count": 12
+  },
+  "missing_value_summary": {
+    "columns_with_missing_values": {},
+    "overall_status": "Clean (0.0% missing after feature pipeline)"
+  },
+  "target_distributions": {
+    "pm2_5": {
+      "mean": 94.92,
+      "std": 42.4,
+      "min": 25.4,
+      "p25": 68.9,
+      "median": 78.1,
+      "p75": 116.4,
+      "p95": 177.0,
+      "max": 298.41
+    },
+    "pm10": {
+      "mean": 159.97,
+      "std": 65.88,
+      "min": 38.8,
+      "p25": 108.5,
+      "median": 143.0,
+      "p75": 194.6,
+      "p95": 286.8,
+      "max": 459.89
+    }
+  },
+  "feature_summary": {
+    "total_engineered_features": 72,
+    "feature_names": [
+      "aerosol_optical_depth",
+      "dayofweek",
+      "dayofyear",
+      "dispersion_capacity",
+      "diwali_surge_intensity",
+      "dow_cos",
+      "dow_sin",
+      "doy_cos",
+      "doy_sin",
+      "hour",
+      "hour_cos",
+      "hour_sin",
+      "hours_to_diwali",
+      "landuse_Commercial Core",
+      "landuse_Commercial Traffic Hub",
+      "landuse_Dense Residential",
+      "landuse_Green Residential",
+      "landuse_Heavy Industrial",
+      "landuse_Industrial & Grain Transit",
+      "landuse_Industrial Complex",
+      "landuse_Industrial Manufacturing",
+      "landuse_Institutional Green Belt",
+      "landuse_Mixed Residential-Commercial",
+      "landuse_Planned Residential",
+      "landuse_Residential-Institutional",
+      "landuse_Ridge Buffer Institutional",
+      "landuse_Transport Hub",
+      "latitude",
+      "longitude",
+      "nitrogen_dioxide",
+      "ozone",
+      "pm10",
+      "pm10_lag_12h",
+      "pm10_lag_1h",
+      "pm10_lag_24h",
+      "pm10_lag_2h",
+      "pm10_lag_3h",
+      "pm10_lag_6h",
+      "pm10_rolling_mean_12h",
+      "pm10_rolling_mean_24h",
+      "pm10_rolling_mean_6h",
+      "pm10_rolling_std_12h",
+      "pm10_rolling_std_24h",
+      "pm10_rolling_std_6h",
+      "pm2_5",
+      "pm2_5_lag_12h",
+      "pm2_5_lag_1h",
+      "pm2_5_lag_24h",
+      "pm2_5_lag_2h",
+      "pm2_5_lag_3h",
+      "pm2_5_lag_6h",
+      "pm2_5_rolling_mean_12h",
+      "pm2_5_rolling_mean_24h",
+      "pm2_5_rolling_mean_6h",
+      "pm2_5_rolling_std_12h",
+      "pm2_5_rolling_std_24h",
+      "pm2_5_rolling_std_6h",
+      "population_density_factor",
+      "precipitation",
+      "relative_humidity_2m",
+      "road_density_factor",
+      "stagnation_index",
+      "sulphur_dioxide",
+      "surface_pressure",
+      "temperature_2m",
+      "wind_dir_cos",
+      "wind_dir_sin",
+      "wind_direction_10m",
+      "wind_speed",
+      "wind_speed_10m",
+      "wind_u",
+      "wind_v"
+    ]
+  },
+  "station_distribution": {
+    "anand_vihar": 2568,
+    "bawana": 2568,
+    "connaught_place": 2568,
+    "dwarka": 2568,
+    "ito": 2568,
+    "jahangirpuri": 2568,
+    "lodhi_road": 2568,
+    "mandir_marg": 2568,
+    "narela": 2568,
+    "okhla_phase_2": 2568,
+    "punjabi_bagh": 2568,
+    "rk_puram": 2568,
+    "rohini": 2568,
+    "siri_fort": 2568,
+    "wazirpur": 2568
+  },
+  "data_sources": [
+    {
+      "name": "CPCB / Open-Meteo CAMS Air Quality Reanalysis",
+      "variables": [
+        "pm2_5",
+        "pm10",
+        "nitrogen_dioxide",
+        "sulphur_dioxide",
+        "ozone",
+        "aerosol_optical_depth"
+      ],
+      "frequency": "Hourly",
+      "coverage": "Delhi NCR (15 monitoring stations, 2021-2025)"
+    },
+    {
+      "name": "Open-Meteo Historical Meteorological Archive",
+      "variables": [
+        "temperature_2m",
+        "relative_humidity_2m",
+        "surface_pressure",
+        "wind_speed_10m",
+        "wind_direction_10m",
+        "precipitation"
+      ],
+      "frequency": "Hourly",
+      "coverage": "Continuous reanalysis point-interpolated per station"
+    },
+    {
+      "name": "OpenStreetMap Built-Environment & Road Density",
+      "variables": [
+        "road_density_km_per_km2",
+        "traffic_signal_density",
+        "industrial_fraction",
+        "green_cover_fraction"
+      ],
+      "frequency": "Static geospatial layer",
+      "coverage": "15 benchmark neighborhoods"
+    }
+  ]
+}

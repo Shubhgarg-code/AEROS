@@ -1,0 +1,16 @@
+neighborhood_id,name,latitude,longitude,zone,land_use,road_density_factor,population_density_factor,road_density_km_per_km2,traffic_signal_density,industrial_fraction,green_cover_fraction,bus_terminal_present,railway_proximity_km
+anand_vihar,Anand Vihar,28.6469,77.316,East,Transport Hub,1.5,1.4,18.4,6.2,0.15,0.08,1,0.3
+punjabi_bagh,Punjabi Bagh,28.6683,77.1167,West,Mixed Residential-Commercial,1.3,1.2,15.6,5.1,0.05,0.14,0,1.2
+rk_puram,RK Puram,28.566,77.1767,South,Residential-Institutional,1.0,1.1,11.8,3.8,0.01,0.28,0,3.5
+ito,ITO,28.6289,77.2407,Central,Commercial Traffic Hub,1.6,1.3,21.2,8.5,0.02,0.06,0,0.8
+bawana,Bawana,28.7762,77.051,North-West,Heavy Industrial,1.1,0.9,8.4,1.4,0.65,0.09,0,4.1
+narela,Narela,28.8526,77.0931,North,Industrial & Grain Transit,1.1,0.8,7.9,1.2,0.55,0.12,1,0.5
+jahangirpuri,Jahangirpuri,28.7328,77.1706,North,Dense Residential,1.2,1.5,16.5,4.8,0.18,0.05,0,1.9
+dwarka,Dwarka,28.5921,77.046,South-West,Planned Residential,0.9,1.0,10.4,2.9,0.02,0.22,0,4.8
+lodhi_road,Lodhi Road,28.5883,77.2217,South-Central,Institutional Green Belt,0.8,0.7,9.2,2.5,0.0,0.42,0,2.2
+okhla_phase_2,Okhla Phase 2,28.5308,77.2713,South-East,Industrial Complex,1.3,1.2,14.8,4.6,0.58,0.07,0,1.1
+rohini,Rohini,28.7166,77.1143,North-West,Dense Residential,1.1,1.3,13.2,3.7,0.08,0.18,0,2.6
+wazirpur,Wazirpur,28.6999,77.1654,North-West,Industrial Manufacturing,1.4,1.2,17.1,5.4,0.62,0.04,0,1.5
+mandir_marg,Mandir Marg,28.6341,77.2005,Central,Ridge Buffer Institutional,0.9,0.8,10.5,3.1,0.0,0.36,0,1.8
+siri_fort,Siri Fort,28.5504,77.2159,South,Green Residential,0.8,0.9,8.7,2.2,0.0,0.48,0,3.9
+connaught_place,Connaught Place,28.6315,77.2167,Central,Commercial Core,1.4,1.2,24.5,9.2,0.01,0.11,0,0.6
