@@ -1,6 +1,7 @@
 /**
  * AEROS Production API Client
- * Connects directly to FastAPI backend service at VITE_API_URL
+ * Connects directly to FastAPI backend service
+ * Supports local development (http://localhost:8000) and Vercel production (/api)
  */
 
 import {
@@ -16,7 +17,14 @@ import {
   StationDetail,
 } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const isLocalhost =
+  typeof window !== 'undefined' &&
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+// Base URL detection: explicit VITE_API_URL > direct localhost:8000 in dev > relative path in prod
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  (isLocalhost && window.location.port !== '8000' ? 'http://localhost:8000' : '');
 
 class AerosApiClient {
   private baseUrl: string;
@@ -26,7 +34,39 @@ class AerosApiClient {
   }
 
   private async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
-    const url = `${this.baseUrl}${endpoint.startsWith('/') ? endpoint : `/${endpoint}`}`;
+    const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+
+    // Candidate URLs to try in order of preference
+    const candidates: string[] = [];
+
+    if (this.baseUrl) {
+      candidates.push(`${this.baseUrl}${cleanEndpoint}`);
+      if (!this.baseUrl.endsWith('/api') && !cleanEndpoint.startsWith('/api')) {
+        candidates.push(`${this.baseUrl}/api${cleanEndpoint}`);
+      }
+    }
+
+    // Direct localhost:8000 target for local development
+    if (isLocalhost) {
+      const localDirect = `http://localhost:8000${cleanEndpoint}`;
+      if (!candidates.includes(localDirect)) {
+        candidates.push(localDirect);
+      }
+      const localApi = `http://localhost:8000/api${cleanEndpoint}`;
+      if (!candidates.includes(localApi)) {
+        candidates.push(localApi);
+      }
+    }
+
+    // Relative targets (for Vercel rewrites / proxy)
+    if (!candidates.includes(cleanEndpoint)) {
+      candidates.push(cleanEndpoint);
+    }
+    const relApi = `/api${cleanEndpoint}`;
+    if (!candidates.includes(relApi)) {
+      candidates.push(relApi);
+    }
+
     const defaultHeaders = {
       'Content-Type': 'application/json',
       Accept: 'application/json',
@@ -40,10 +80,22 @@ class AerosApiClient {
       },
     };
 
-    try {
-      const response = await fetch(url, config);
+    let lastError: Error | null = null;
 
-      if (!response.ok) {
+    for (let i = 0; i < candidates.length; i++) {
+      const url = candidates[i];
+      try {
+        const response = await fetch(url, config);
+
+        if (response.ok) {
+          return (await response.json()) as T;
+        }
+
+        // If 404, try next candidate URL before failing
+        if (response.status === 404 && i < candidates.length - 1) {
+          continue;
+        }
+
         let errorDetail = `HTTP ${response.status} ${response.statusText}`;
         try {
           const errorJson = await response.json();
@@ -52,13 +104,17 @@ class AerosApiClient {
           // ignore parsing error
         }
         throw new Error(errorDetail);
+      } catch (err: any) {
+        lastError = err;
+        // On connection errors, try next candidate URL
+        if (i < candidates.length - 1) {
+          continue;
+        }
       }
-
-      return (await response.json()) as T;
-    } catch (error: any) {
-      console.error(`AEROS API Error at ${endpoint}:`, error);
-      throw error;
     }
+
+    console.error(`AEROS API Error at ${endpoint}:`, lastError);
+    throw lastError || new Error(`Unable to connect to ${endpoint}`);
   }
 
   // --- 1. Overview Dashboard ---
