@@ -31,6 +31,7 @@ app.add_middleware(
 
 # Mount core simulation and inference routes
 app.include_router(router, prefix="/api/v1")
+app.include_router(router, prefix="/api")
 app.include_router(router)  # Also mount at root for direct endpoint access
 
 # Mount frontend web dashboard if built
@@ -43,7 +44,7 @@ if os.path.exists(dist_dir):
 def root_status():
     return {
         "service": "AEROS API",
-        "version": "1.5.0",
+        "version": "1.7.0",
         "status": "ONLINE",
         "documentation": "/docs",
         "endpoints": [
