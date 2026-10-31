@@ -1,5 +1,5 @@
 # AEROS 🌍
-### AI-Powered Atmospheric Intelligence & Air Quality Prediction System
+### AI-Powered Enavironmental Reconstruction And Optimization System
 
 **Predict. Understand. Prevent.**
 
