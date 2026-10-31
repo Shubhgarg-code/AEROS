@@ -1,5 +1,5 @@
 # AEROS 🌍
-### AI-Powered Enavironmental Reconstruction And Optimization System
+### AI-Powered Environmental Reconstruction And Optimization System
 
 **Predict. Understand. Prevent.**
 
