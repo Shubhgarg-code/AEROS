@@ -1,5 +1,5 @@
 import React from 'react';
-import { RefreshCw, MapPin, BookOpen } from 'lucide-react';
+import { RefreshCw, MapPin, BookOpen, Sun, Moon } from 'lucide-react';
 
 interface HeaderProps {
   title: string;
@@ -8,6 +8,8 @@ interface HeaderProps {
   onOpenGuide?: () => void;
   isLoading?: boolean;
   lastUpdated?: string;
+  theme?: 'light' | 'dark';
+  onToggleTheme?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -17,6 +19,8 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenGuide,
   isLoading = false,
   lastUpdated,
+  theme = 'light',
+  onToggleTheme,
 }) => {
   return (
     <header className="flex h-16 shrink-0 items-center justify-between border-b border-[#E5E5DF] bg-white/90 px-8 backdrop-blur z-10">
@@ -37,6 +41,22 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <BookOpen className="h-3.5 w-3.5" />
             <span>Quick Guide</span>
+          </button>
+        )}
+
+        {/* Theme Toggle Button */}
+        {onToggleTheme && (
+          <button
+            onClick={onToggleTheme}
+            className="flex h-8 w-8 items-center justify-center rounded-md border border-[#E5E5DF] bg-white text-charcoal-muted hover:text-charcoal hover:bg-[#F2F2EC] transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            aria-label="Toggle Theme"
+          >
+            {theme === 'dark' ? (
+              <Sun className="h-4 w-4 text-[#F59E0B]" />
+            ) : (
+              <Moon className="h-4 w-4 text-[#5A626A]" />
+            )}
           </button>
         )}
 

@@ -10,6 +10,8 @@ import {
   BarChart3,
   Cpu,
   BookOpen,
+  Sun,
+  Moon,
 } from 'lucide-react';
 
 export type NavTab =
@@ -28,6 +30,8 @@ interface SidebarProps {
   onSelectTab: (tab: NavTab) => void;
   apiHealthy?: boolean;
   onOpenGuide?: () => void;
+  theme?: 'light' | 'dark';
+  onToggleTheme?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -35,6 +39,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSelectTab,
   apiHealthy = true,
   onOpenGuide,
+  theme = 'light',
+  onToggleTheme,
 }) => {
   const navItems: Array<{
     id: NavTab;
@@ -176,6 +182,29 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
             <span className="text-[10px] rounded bg-white px-1.5 py-0.5 border border-[#CDE5DF] text-brand-green font-mono">
               Help
+            </span>
+          </button>
+        </div>
+      )}
+
+      {/* Theme Switcher in Sidebar */}
+      {onToggleTheme && (
+        <div className="px-3 py-2.5 border-t border-[#E5E5DF] bg-[#FAF8F5]">
+          <button
+            onClick={onToggleTheme}
+            className="flex w-full items-center justify-between rounded-lg border border-[#E5E5DF] bg-white px-3 py-2 text-xs text-charcoal hover:bg-[#F2F2EC] transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          >
+            <div className="flex items-center gap-2">
+              {theme === 'dark' ? (
+                <Sun className="h-4 w-4 text-[#F59E0B]" />
+              ) : (
+                <Moon className="h-4 w-4 text-[#5A626A]" />
+              )}
+              <span>{theme === 'dark' ? 'Light Theme' : 'Dark Theme'}</span>
+            </div>
+            <span className="text-[10px] rounded bg-[#FAFAF7] px-1.5 py-0.5 border border-[#E5E5DF] text-charcoal-muted font-mono uppercase">
+              {theme}
             </span>
           </button>
         </div>

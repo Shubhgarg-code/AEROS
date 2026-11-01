@@ -20,6 +20,32 @@ export const App: React.FC = () => {
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [isGuideOpen, setIsGuideOpen] = useState<boolean>(false);
 
+  // Dark / Light Theme State with LocalStorage persistence and system preference fallback
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('aeros_theme');
+      if (saved === 'dark' || saved === 'light') return saved;
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+    }
+    return 'light';
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+    localStorage.setItem('aeros_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   const checkHealth = async () => {
     try {
       setIsRefreshing(true);
@@ -88,6 +114,8 @@ export const App: React.FC = () => {
         onSelectTab={setCurrentTab}
         apiHealthy={apiHealthy}
         onOpenGuide={() => setIsGuideOpen(true)}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
 
       {/* Main Content Area */}
@@ -99,6 +127,8 @@ export const App: React.FC = () => {
           onOpenGuide={() => setIsGuideOpen(true)}
           isLoading={isRefreshing}
           lastUpdated={lastSyncTime}
+          theme={theme}
+          onToggleTheme={toggleTheme}
         />
 
         <main className="flex-1 overflow-y-auto p-8">
