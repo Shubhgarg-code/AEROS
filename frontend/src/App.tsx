@@ -67,40 +67,40 @@ export const App: React.FC = () => {
 
   const pageHeaders: Record<NavTab, { title: string; subtitle: string }> = {
     overview: {
-      title: 'Air Quality Overview',
-      subtitle: 'Live ambient air conditions, weather factors, and active monitoring network',
+      title: 'City Overview',
+      subtitle: 'Live ambient air conditions, daily health advice, and active sensors',
     },
     'live-map': {
-      title: 'Environmental Map',
-      subtitle: 'Continuous physical stations and spatial pollution estimates across Delhi NCR',
+      title: 'Environmental GIS Map',
+      subtitle: 'Physical monitoring stations and spatial pollution estimates across Delhi NCR',
     },
     forecasting: {
       title: 'Air Quality Forecasts',
-      subtitle: 'Hourly predictions from 1 to 72 hours ahead with 90% confidence intervals',
+      subtitle: 'Hourly predictions from 1 to 72 hours ahead with 90% confidence bands',
     },
     spatial: {
-      title: 'Neighbourhood Estimates',
-      subtitle: 'Estimating air quality at unmonitored locations using graph spatial modeling',
+      title: 'Virtual Sensors',
+      subtitle: 'Estimate air quality at any address or landmark using spatial graph AI',
     },
     propagation: {
-      title: 'Pollution Propagation',
+      title: 'Smoke & Plume Drift',
       subtitle: 'Simulating wind transport and particulate diffusion across the airshed',
     },
     simulator: {
-      title: 'What-if Scenarios',
-      subtitle: 'Evaluating the air quality impact of emission changes and mitigation policies',
+      title: 'What-If Policies',
+      subtitle: 'Test how firecracker curbs and traffic restrictions flatten pollution spikes',
     },
     recovery: {
-      title: 'Air Quality Recovery',
-      subtitle: 'Projected hours required to return to clean air thresholds after pollution events',
+      title: 'Recovery Time',
+      subtitle: 'Projected hours required to naturally return below clean air standards',
     },
     comparison: {
-      title: 'Scenario Comparison',
-      subtitle: 'Side-by-side benchmark of policy scenarios and estimated pollution reductions',
+      title: 'Policy Benchmarks',
+      subtitle: 'Side-by-side trade-off matrix of environmental interventions',
     },
     models: {
-      title: 'Model Intelligence',
-      subtitle: 'Validation metrics, dataset specifications, and model architecture documentation',
+      title: 'Model Specs & Architecture',
+      subtitle: 'Validation metrics, neural network topologies, and evaluation benchmarks',
     },
   };
 
@@ -133,7 +133,9 @@ export const App: React.FC = () => {
 
         <main className="flex-1 overflow-y-auto p-8">
           <div className="mx-auto max-w-7xl">
-            {currentTab === 'overview' && <OverviewPage />}
+            {currentTab === 'overview' && (
+              <OverviewPage onNavigate={(tab) => setCurrentTab(tab)} />
+            )}
             {currentTab === 'live-map' && <LiveMapPage />}
             {currentTab === 'forecasting' && <ForecastingPage />}
             {currentTab === 'spatial' && <SpatialPage />}

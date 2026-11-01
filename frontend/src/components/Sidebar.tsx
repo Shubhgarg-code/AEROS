@@ -51,9 +51,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
   }> = [
     {
       id: 'overview',
-      label: 'Overview',
+      label: 'City Overview',
       icon: <LayoutDashboard className="h-4 w-4" />,
-      section: 'Live Monitoring',
+      section: 'Live Airflow',
     },
     {
       id: 'live-map',
@@ -62,46 +62,43 @@ export const Sidebar: React.FC<SidebarProps> = ({
     },
     {
       id: 'forecasting',
-      label: 'Air Quality Forecasts',
+      label: 'Forecasts (1–72h)',
       icon: <TrendingUp className="h-4 w-4" />,
-      tag: '1–72h',
-      section: 'Atmospheric AI',
+      section: 'Predictive AI',
     },
     {
       id: 'spatial',
-      label: 'Neighbourhood Estimates',
+      label: 'Virtual Sensors',
       icon: <Share2 className="h-4 w-4" />,
-      tag: 'Virtual Sensor',
+      tag: 'Any GPS',
     },
     {
       id: 'propagation',
-      label: 'Pollution Propagation',
+      label: 'Smoke & Plume Drift',
       icon: <Wind className="h-4 w-4" />,
-      tag: 'Dispersion',
     },
     {
       id: 'simulator',
-      label: 'What-if Scenarios',
+      label: 'What-If Policies',
       icon: <Sparkles className="h-4 w-4 text-[#C48A2C]" />,
       tag: 'Diwali',
       section: 'Policy Sandbox',
     },
     {
       id: 'recovery',
-      label: 'Air Quality Recovery',
+      label: 'Recovery Time',
       icon: <Clock className="h-4 w-4" />,
-      tag: 'Cleanout Time',
     },
     {
       id: 'comparison',
-      label: 'Scenario Comparison',
+      label: 'Policy Benchmarks',
       icon: <BarChart3 className="h-4 w-4" />,
     },
     {
       id: 'models',
-      label: 'Model Intelligence',
+      label: 'Model Specs',
       icon: <Cpu className="h-4 w-4" />,
-      section: 'Documentation',
+      section: 'System',
     },
   ];
 
@@ -132,7 +129,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           return (
             <React.Fragment key={item.id}>
               {item.section && (
-                <div className={`px-3 py-1.5 text-[11px] font-medium text-[#8C959D] uppercase tracking-wider ${index > 0 ? 'mt-4' : ''}`}>
+                <div className={`px-3 py-1.5 text-[10px] font-semibold text-[#8C959D] uppercase tracking-wider ${index > 0 ? 'mt-4' : ''}`}>
                   {item.section}
                 </div>
               )}
@@ -189,7 +186,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Theme Switcher in Sidebar */}
       {onToggleTheme && (
-        <div className="px-3 py-2.5 border-t border-[#E5E5DF] bg-[#FAF8F5]">
+        <div className="px-3 py-2 border-t border-[#E5E5DF] bg-[#FAF8F5]">
           <button
             onClick={onToggleTheme}
             className="flex w-full items-center justify-between rounded-lg border border-[#E5E5DF] bg-white px-3 py-2 text-xs text-charcoal hover:bg-[#F2F2EC] transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
