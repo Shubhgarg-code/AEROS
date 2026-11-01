@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Share2,
   MapPin,
-  Compass,
   Layers,
-  ArrowRight,
-  ShieldCheck,
-  AlertCircle,
   HelpCircle,
   Activity,
   Info,
+  CheckCircle2,
+  Navigation,
 } from 'lucide-react';
 import { apiClient } from '../api/client';
 import { SpatialPredictionData, SupportingStation } from '../types';
@@ -17,14 +15,15 @@ import { MetricCard } from '../components/MetricCard';
 import { DisclaimerBanner } from '../components/DisclaimerBanner';
 
 export const SpatialPage: React.FC = () => {
-  const [lat, setLat] = useState<number>(28.6139);
-  const [lon, setLon] = useState<number>(77.2090);
+  const [lat, setLat] = useState<number>(28.6129);
+  const [lon, setLon] = useState<number>(77.2295);
   const [modelType, setModelType] = useState<string>('graphsage');
   const [windSpeed, setWindSpeed] = useState<number>(2.5);
 
   const [prediction, setPrediction] = useState<SpatialPredictionData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [showHelper, setShowHelper] = useState<boolean>(false);
 
   // Preset landmarks across Delhi NCR
   const presetLocations = [
@@ -54,6 +53,11 @@ export const SpatialPage: React.FC = () => {
     }
   };
 
+  // Auto-run on initial load with default landmark (India Gate)
+  useEffect(() => {
+    handlePredict(28.6129, 77.2295);
+  }, []);
+
   const handleSelectPreset = (presetLat: number, presetLon: number) => {
     setLat(presetLat);
     setLon(presetLon);
@@ -64,41 +68,81 @@ export const SpatialPage: React.FC = () => {
     <div className="space-y-6">
       <DisclaimerBanner type="observation" />
 
+      {/* Explainer / Why this matters banner */}
+      <div className="rounded-xl border border-[#CDE5DF] bg-[#EAF4F1]/60 p-4">
+        <div className="flex items-start justify-between">
+          <div className="flex items-start gap-2.5">
+            <Navigation className="h-4 w-4 text-brand-green mt-0.5 shrink-0" />
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-[#285D52]">
+                Virtual Sensor: Estimating Unmonitored Neighborhoods
+              </h3>
+              <p className="mt-1 text-xs text-[#285D52]/90 leading-relaxed">
+                Delhi has only around 40 physical stations for 1,484 km². If your colony or school doesn't have a sensor,
+                this AI engine triangulates the 4 nearest physical monitors, local road density, and wind vectors to estimate
+                accurate air quality for <strong>any coordinate in Delhi NCR</strong>.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => setShowHelper(!showHelper)}
+            className="text-[11px] font-medium text-brand-green hover:underline shrink-0 ml-3"
+          >
+            {showHelper ? 'Hide Details' : 'How it Works'}
+          </button>
+        </div>
+
+        {showHelper && (
+          <div className="mt-3 pt-3 border-t border-[#CDE5DF] grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-[#285D52]">
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>1. Proximity Anchoring:</strong> Finds the 4 closest ground monitors using geodesic Haversine distance.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>2. Graph AI (GraphSAGE):</strong> Models pollution flow between nodes based on road congestion and elevation.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>3. Honest Uncertainty:</strong> If you are far from a sensor (&gt;12 km), the model explicitly flags LOW confidence.
+            </div>
+          </div>
+        )}
+      </div>
+
       {/* Coordinate Input & Presets */}
       <div className="rounded-xl border border-[#E5E5DF] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
         <div className="border-b border-[#F2F2EC] pb-4">
           <h3 className="text-sm font-semibold tracking-tight text-charcoal">
-            Neighbourhood Pollution Estimates
+            Select a Delhi Landmark or Enter Coordinates
           </h3>
           <p className="text-xs text-charcoal-muted">
-            Estimate particulate concentrations at unmonitored locations using graph spatial modeling and distance weighting
+            Click any prominent neighborhood below to instantly see its AI Virtual Sensor reading:
           </p>
         </div>
 
         {/* Quick Presets */}
         <div className="mt-4">
-          <span className="text-xs font-medium text-charcoal-muted block mb-2">
-            Select a representative neighbourhood or landmark:
-          </span>
           <div className="flex flex-wrap gap-2">
-            {presetLocations.map((p, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleSelectPreset(p.lat, p.lon)}
-                className={`rounded-md border px-3 py-1.5 text-xs transition-colors ${
-                  Math.abs(lat - p.lat) < 0.001 && Math.abs(lon - p.lon) < 0.001
-                    ? 'border-[#CDE5DF] bg-[#EAF4F1] text-[#285D52] font-semibold'
-                    : 'border-[#E5E5DF] bg-[#FAFAF7] text-charcoal-muted hover:bg-white hover:text-charcoal'
-                }`}
-              >
-                {p.name}
-              </button>
-            ))}
+            {presetLocations.map((p, idx) => {
+              const isSelected = Math.abs(lat - p.lat) < 0.001 && Math.abs(lon - p.lon) < 0.001;
+              return (
+                <button
+                  key={idx}
+                  onClick={() => handleSelectPreset(p.lat, p.lon)}
+                  className={`flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs transition-all ${
+                    isSelected
+                      ? 'border-[#CDE5DF] bg-[#EAF4F1] text-[#285D52] font-semibold shadow-sm'
+                      : 'border-[#E5E5DF] bg-[#FAFAF7] text-charcoal hover:bg-white hover:border-[#C5C5BD]'
+                  }`}
+                >
+                  <MapPin className={`h-3.5 w-3.5 ${isSelected ? 'text-brand-green' : 'text-charcoal-muted'}`} />
+                  <span>{p.name}</span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
         {/* Manual Coordinate Form */}
-        <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-4">
+        <div className="mt-6 pt-5 border-t border-[#F2F2EC] grid grid-cols-1 gap-4 sm:grid-cols-4">
           <div>
             <label className="block text-xs font-medium text-charcoal-muted mb-1">
               Latitude (°N: 28.25 – 29.00)
@@ -127,14 +171,14 @@ export const SpatialPage: React.FC = () => {
 
           <div>
             <label className="block text-xs font-medium text-charcoal-muted mb-1">
-              Spatial Estimation Model
+              Spatial AI Model
             </label>
             <select
               value={modelType}
               onChange={(e) => setModelType(e.target.value)}
               className="w-full rounded-md border border-[#E5E5DF] bg-[#FAFAF7] px-3 py-2 text-xs text-charcoal focus:border-brand-green focus:bg-white focus:outline-none transition-colors"
             >
-              <option value="graphsage">GraphSAGE (Spatial Inductive)</option>
+              <option value="graphsage">GraphSAGE (Inductive Graph Neural Network)</option>
               <option value="gat">Graph Attention Network (GAT)</option>
               <option value="gcn">Graph Convolutional Network (GCN)</option>
               <option value="stgnn">Spatiotemporal GNN</option>
@@ -164,18 +208,26 @@ export const SpatialPage: React.FC = () => {
       {prediction && (
         <div className="space-y-6">
           {/* Narrative Summary */}
-          <div className="rounded-xl border border-[#E5E5DF] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-            <div className="flex items-center gap-2">
+          <div className="rounded-xl border border-[#E5E5DF] bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+            <div className="flex items-center justify-between">
               <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-muted">
                 Spatial Estimate Summary
               </span>
-              <span className="rounded bg-[#EAF4F1] px-2 py-0.5 text-[11px] font-medium text-[#285D52] border border-[#CDE5DF]">
+              <span
+                className={`rounded px-2.5 py-0.5 text-xs font-medium border ${
+                  prediction.target_location.confidence_rating === 'HIGH'
+                    ? 'bg-[#EAF4F1] text-[#285D52] border-[#CDE5DF]'
+                    : prediction.target_location.confidence_rating === 'MODERATE'
+                    ? 'bg-[#FDF6E9] text-[#865914] border-[#F5E2BE]'
+                    : 'bg-[#FCEEEE] text-[#8A2424] border-[#F5C2C2]'
+                }`}
+              >
                 Confidence: {prediction.target_location.confidence_rating}
               </span>
             </div>
-            <p className="mt-1.5 text-xs text-charcoal leading-relaxed">
+            <p className="mt-2 text-sm text-charcoal leading-relaxed">
               At coordinate <strong className="font-semibold">{lat.toFixed(4)}°N, {lon.toFixed(4)}°E</strong>, estimated
-              PM2.5 is <strong className="font-semibold">{prediction.pm2_5.point_estimate.toFixed(1)} µg/m³</strong>.
+              PM2.5 is <strong className="font-semibold text-brand-green">{prediction.pm2_5.point_estimate.toFixed(1)} µg/m³</strong>.
               The nearest physical monitoring station is{' '}
               <strong className="font-semibold">{prediction.nearest_monitoring_station.name}</strong>, located{' '}
               <strong className="font-semibold">{prediction.target_location.distance_to_nearest_monitor_km} km</strong> away.
@@ -194,7 +246,7 @@ export const SpatialPage: React.FC = () => {
               }}
               badge={
                 <span className="rounded bg-[#EAF4F1] px-2 py-0.5 text-[10px] font-mono text-[#285D52] border border-[#CDE5DF]">
-                  Model Estimate
+                  Virtual Sensor
                 </span>
               }
             />
@@ -222,7 +274,7 @@ export const SpatialPage: React.FC = () => {
               }}
               badge={
                 <span className="rounded bg-[#F2F2EC] px-2 py-0.5 text-[10px] font-mono text-charcoal-muted border border-[#E5E5DF]">
-                  Ground Truth
+                  Ground Truth Anchor
                 </span>
               }
             />

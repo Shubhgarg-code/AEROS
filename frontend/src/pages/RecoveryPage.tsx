@@ -33,6 +33,7 @@ export const RecoveryPage: React.FC = () => {
   const [recoveryData, setRecoveryData] = useState<RecoveryData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [showHelper, setShowHelper] = useState<boolean>(false);
 
   // Realistic post-Diwali concentration series (peaking at ~450 µg/m³)
   const defaultPm25Series = [
@@ -76,6 +77,45 @@ export const RecoveryPage: React.FC = () => {
   return (
     <div className="space-y-6">
       <DisclaimerBanner type="uncertainty" />
+
+      {/* Explainer Banner */}
+      <div className="rounded-xl border border-[#CDE5DF] bg-[#EAF4F1]/60 p-4">
+        <div className="flex items-start justify-between">
+          <div className="flex items-start gap-2.5">
+            <Clock className="h-4 w-4 text-brand-green mt-0.5 shrink-0" />
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-[#285D52]">
+                Atmospheric Recovery Time & Cleanout Rate
+              </h3>
+              <p className="mt-1 text-xs text-[#285D52]/90 leading-relaxed">
+                After severe pollution spikes (like Diwali night or heavy stubble burning episodes), 
+                how many hours will nature take to return air back below safe standards? 
+                This tool calculates the <strong>particulate relaxation half-life ($t_{1/2}$)</strong> and total clearance duration.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => setShowHelper(!showHelper)}
+            className="text-[11px] font-medium text-brand-green hover:underline shrink-0 ml-3"
+          >
+            {showHelper ? 'Hide Guide' : 'How it Works'}
+          </button>
+        </div>
+
+        {showHelper && (
+          <div className="mt-3 pt-3 border-t border-[#CDE5DF] grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-[#285D52]">
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Relaxation Rate:</strong> Speed at which particulates disperse through wind advection and dry deposition.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Half-Life ($t_{1/2}$):</strong> Time in hours required for the atmosphere to cut pollutant density in half.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Rain Scavenging:</strong> Rainfall washes airborne dust down to the surface, accelerating recovery.
+            </div>
+          </div>
+        )}
+      </div>
 
       {/* Control Configuration Panel */}
       <div className="rounded-xl border border-[#E5E5DF] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
@@ -219,23 +259,22 @@ export const RecoveryPage: React.FC = () => {
             />
 
             <MetricCard
-              title="Particulate Half-Life"
+              title="Relaxation Half-Life (t½)"
               value={`${recDetail.half_life_hours.toFixed(1)}h`}
-              unit={`λ = ${recDetail.effective_decay_rate_per_hour.toFixed(3)}/h`}
-              subtitle="Time required to halve excess pollution"
+              subtitle="Time to reduce peak by 50%"
               trend={{
-                value: windSpeed > 3.0 ? 'Rapid Dispersion' : 'Slow Ventilation',
-                isPositive: windSpeed > 3.0,
+                value: `Ventilation: ${(windSpeed * 3.6).toFixed(1)} km/h`,
+                isNeutral: true,
               }}
             />
 
             <MetricCard
-              title="Event Peak PM2.5"
-              value={recDetail.peak_value.toFixed(1)}
+              title="Target Threshold"
+              value={`${recDetail.target_threshold}`}
               unit="µg/m³"
-              subtitle={`Threshold: ${recDetail.target_threshold} µg/m³`}
+              subtitle={`Peak: ${recDetail.peak_value.toFixed(1)} µg/m³`}
               trend={{
-                value: `Excess: ${(recDetail.peak_value - recDetail.target_threshold).toFixed(0)} µg/m³`,
+                value: `${((1 - recDetail.target_threshold / recDetail.peak_value) * 100).toFixed(0)}% Reduction Required`,
                 isNeutral: true,
               }}
             />
@@ -243,40 +282,22 @@ export const RecoveryPage: React.FC = () => {
         </>
       )}
 
-      {/* Warning if threshold is not reached within horizon */}
-      {recDetail && !recDetail.recovery_achieved_within_horizon && (
-        <div className="flex items-start gap-3 rounded-xl border border-[#EDE7D9] bg-[#FAF8F3] p-4 text-[#6B5A42] shadow-[0_1px_2px_rgba(0,0,0,0.01)]">
-          <AlertCircle className="h-5 w-5 shrink-0 text-[#8C7351] mt-0.5" />
-          <div className="text-xs">
-            <h4 className="font-semibold text-charcoal">
-              Clearance Threshold Extrapolated Beyond Initial 24 Hours
-            </h4>
-            <p className="mt-1 text-charcoal-muted leading-relaxed">
-              With calm winds ({windSpeed} m/s) and severe peak concentrations ({recDetail.peak_value} µg/m³),
-              particulate levels remain above {selectedThreshold} µg/m³ throughout the initial 24-hour observation period.
-              Atmospheric relaxation modeling projects full airshed clearance at{' '}
-              <strong className="font-semibold text-charcoal">{recDetail.clearance_hours_from_peak.toFixed(1)} hours</strong> post-peak.
-            </p>
-          </div>
-        </div>
-      )}
-
       {/* Recovery Curve Chart */}
       <div className="rounded-xl border border-[#E5E5DF] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#F2F2EC] pb-4 mb-4">
           <div>
             <h3 className="text-sm font-semibold tracking-tight text-charcoal">
-              Post-Peak Atmospheric Relaxation Trajectory
+              Post-Peak Particulate Relaxation Trajectory
             </h3>
             <p className="text-xs text-charcoal-muted">
-              Projected exponential decay curve returning toward the target clean air standard
+              Projected exponential decay curve indicating clearance below the {selectedThreshold} µg/m³ threshold
             </p>
           </div>
 
           <div className="flex items-center gap-4 text-xs">
-            <span className="flex items-center gap-1.5 text-charcoal font-medium">
+            <span className="flex items-center gap-1.5 text-charcoal">
               <span className="h-2 w-2 rounded-full bg-brand-green" />
-              Projected PM2.5
+              Projected PM2.5 Decay
             </span>
             <span className="flex items-center gap-1.5 text-[#C26738]">
               <span className="h-0.5 w-3 bg-[#C26738]" />
@@ -285,13 +306,13 @@ export const RecoveryPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="h-80 w-full">
+        <div className="h-72 w-full">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#F0F0EB" vertical={false} />
               <XAxis dataKey="hour" stroke="#8C959D" fontSize={11} tickLine={false} />
               <YAxis stroke="#8C959D" fontSize={11} tickLine={false} />
-              <ReferenceLine y={selectedThreshold} stroke="#C26738" strokeDasharray="4 4" strokeWidth={1.5} />
+              <ReferenceLine y={selectedThreshold} stroke="#C26738" strokeDasharray="4 4" />
               <Tooltip
                 contentStyle={{
                   backgroundColor: '#FFFFFF',
@@ -307,54 +328,13 @@ export const RecoveryPage: React.FC = () => {
                 dataKey="concentration"
                 stroke="#527D75"
                 strokeWidth={2.5}
-                dot={{ r: 2, fill: '#527D75' }}
-                name="PM2.5 (µg/m³)"
+                dot={false}
+                name="Projected PM2.5 (µg/m³)"
               />
             </LineChart>
           </ResponsiveContainer>
         </div>
       </div>
-
-      {/* Synoptic Ventilation Sensitivity Table */}
-      {recoveryData?.ventilation_sensitivity && (
-        <div className="rounded-xl border border-[#E5E5DF] bg-white overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-          <div className="p-5 border-b border-[#F2F2EC]">
-            <h3 className="text-sm font-semibold tracking-tight text-charcoal">
-              Ventilation Sensitivity Spectrum
-            </h3>
-            <p className="text-xs text-charcoal-muted">
-              Relationship between prevailing wind speed and hours required for airshed clearance
-            </p>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs">
-              <thead className="bg-[#FAF8F5] text-[11px] font-medium text-charcoal-muted uppercase tracking-wider border-b border-[#E5E5DF]">
-                <tr>
-                  <th className="py-3 px-4 font-medium">Wind Speed</th>
-                  <th className="py-3 px-4 font-medium">Dispersion Regime</th>
-                  <th className="py-3 px-4 font-medium">Decay Rate (λ)</th>
-                  <th className="py-3 px-4 font-medium">Pollution Half-Life</th>
-                  <th className="py-3 px-4 text-right font-medium">Clearance Time (T_clear)</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[#F2F2EC] font-sans">
-                {recoveryData.ventilation_sensitivity.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-[#FAF8F5] transition-colors">
-                    <td className="py-3 px-4 font-mono font-medium text-brand-green">{row.wind_speed_ms.toFixed(1)} m/s</td>
-                    <td className="py-3 px-4 text-charcoal">{row.regime}</td>
-                    <td className="py-3 px-4 font-mono text-charcoal-muted">{row.decay_rate_per_hour.toFixed(4)} h⁻¹</td>
-                    <td className="py-3 px-4 font-mono text-charcoal-muted">{row.half_life_hours.toFixed(1)} h</td>
-                    <td className="py-3 px-4 text-right font-mono font-semibold text-charcoal">
-                      {row.time_to_clear_hours.toFixed(1)} h
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

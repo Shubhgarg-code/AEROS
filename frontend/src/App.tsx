@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Sidebar, NavTab } from './components/Sidebar';
 import { Header } from './components/Header';
+import { QuickGuideModal } from './components/QuickGuideModal';
 import { OverviewPage } from './pages/OverviewPage';
 import { LiveMapPage } from './pages/LiveMapPage';
 import { ForecastingPage } from './pages/ForecastingPage';
@@ -17,6 +18,7 @@ export const App: React.FC = () => {
   const [apiHealthy, setApiHealthy] = useState<boolean>(true);
   const [lastSyncTime, setLastSyncTime] = useState<string>(new Date().toISOString());
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
+  const [isGuideOpen, setIsGuideOpen] = useState<boolean>(false);
 
   const checkHealth = async () => {
     try {
@@ -85,6 +87,7 @@ export const App: React.FC = () => {
         currentTab={currentTab}
         onSelectTab={setCurrentTab}
         apiHealthy={apiHealthy}
+        onOpenGuide={() => setIsGuideOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -93,6 +96,7 @@ export const App: React.FC = () => {
           title={currentHeader.title}
           subtitle={currentHeader.subtitle}
           onRefresh={checkHealth}
+          onOpenGuide={() => setIsGuideOpen(true)}
           isLoading={isRefreshing}
           lastUpdated={lastSyncTime}
         />
@@ -111,6 +115,13 @@ export const App: React.FC = () => {
           </div>
         </main>
       </div>
+
+      {/* Interactive Quick Guide Modal */}
+      <QuickGuideModal
+        isOpen={isGuideOpen}
+        onClose={() => setIsGuideOpen(false)}
+        onSelectTab={(tab) => setCurrentTab(tab)}
+      />
     </div>
   );
 };

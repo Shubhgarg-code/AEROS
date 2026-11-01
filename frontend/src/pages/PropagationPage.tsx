@@ -9,6 +9,8 @@ import {
   Activity,
   Calendar,
   FastForward,
+  HelpCircle,
+  Navigation,
 } from 'lucide-react';
 import {
   AreaChart,
@@ -34,6 +36,7 @@ export const PropagationPage: React.FC = () => {
   const [durationHours, setDurationHours] = useState<number>(24);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [showHelper, setShowHelper] = useState<boolean>(false);
 
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -97,18 +100,47 @@ export const PropagationPage: React.FC = () => {
     return 'bg-[#EAF4F1] text-[#285D52] border-[#CDE5DF]';
   };
 
-  // Trajectory chart over full simulation
-  const timelineChartData = snapshots.map((s) => ({
-    hour: `+${s.step_hour}h`,
-    pm25: s.mean_pm25,
-    max_pm25: s.max_pm25,
-    pm10: s.mean_pm10,
-    wind: s.wind_speed_ms,
-  }));
-
   return (
     <div className="space-y-6">
       <DisclaimerBanner type="scenario" />
+
+      {/* Explainer Banner */}
+      <div className="rounded-xl border border-[#CDE5DF] bg-[#EAF4F1]/60 p-4">
+        <div className="flex items-start justify-between">
+          <div className="flex items-start gap-2.5">
+            <Wind className="h-4 w-4 text-brand-green mt-0.5 shrink-0" />
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-[#285D52]">
+                Wind Transport & Dispersion Simulation
+              </h3>
+              <p className="mt-1 text-xs text-[#285D52]/90 leading-relaxed">
+                Watch how smoke plumes from industrial hotspots and external burning travel across the 121 wards of Delhi NCR.
+                Hit <strong>Play ▶</strong> to see the advection-diffusion physics engine propagate particulates hour by hour.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => setShowHelper(!showHelper)}
+            className="text-[11px] font-medium text-brand-green hover:underline shrink-0 ml-3"
+          >
+            {showHelper ? 'Hide Guide' : 'How it Works'}
+          </button>
+        </div>
+
+        {showHelper && (
+          <div className="mt-3 pt-3 border-t border-[#CDE5DF] grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-[#285D52]">
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• 11×11 Grid:</strong> Divides Delhi NCR into 121 cells (~5.5 km wide each).
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Wind Vector Advection:</strong> Blows smoke downwind according to surface wind direction and velocity.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Physics Conservation:</strong> Enforces zero negative mass and respects physical diffusion laws.
+            </div>
+          </div>
+        )}
+      </div>
 
       {/* Control Bar */}
       <div className="rounded-xl border border-[#E5E5DF] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
@@ -277,7 +309,7 @@ export const PropagationPage: React.FC = () => {
           <div className="flex items-center gap-3 text-xs text-charcoal-muted">
             <span className="flex items-center gap-1.5">
               <span className="h-2.5 w-2.5 rounded bg-[#EAF4F1] border border-[#CDE5DF]" />
-              &lt; 60
+              &lt; 60 (Good)
             </span>
             <span className="flex items-center gap-1.5">
               <span className="h-2.5 w-2.5 rounded bg-[#FDF6E9] border border-[#F5E2BE]" />
@@ -293,7 +325,7 @@ export const PropagationPage: React.FC = () => {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="h-2.5 w-2.5 rounded bg-[#F9EAEF] border border-[#ECC0CE]" />
-              &gt; 300
+              &gt; 300 (Severe)
             </span>
           </div>
         </div>
@@ -324,53 +356,6 @@ export const PropagationPage: React.FC = () => {
               <span>East Delhi / Noida (77.40°E) →</span>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Temporal Rollout Line Chart */}
-      <div className="rounded-xl border border-[#E5E5DF] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-        <div className="border-b border-[#F2F2EC] pb-3 mb-4">
-          <h3 className="text-sm font-semibold tracking-tight text-charcoal">
-            Airshed Mean Concentration Trajectory
-          </h3>
-          <p className="text-xs text-charcoal-muted">
-            Average pollutant concentration progression across the simulation window
-          </p>
-        </div>
-
-        <div className="h-64 w-full">
-          <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={timelineChartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-              <defs>
-                <linearGradient id="propGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#527D75" stopOpacity={0.25} />
-                  <stop offset="95%" stopColor="#527D75" stopOpacity={0.0} />
-                </linearGradient>
-              </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#F0F0EB" vertical={false} />
-              <XAxis dataKey="hour" stroke="#8C959D" fontSize={11} tickLine={false} />
-              <YAxis stroke="#8C959D" fontSize={11} tickLine={false} />
-              <ReferenceLine y={60} stroke="#C26738" strokeDasharray="4 4" />
-              <Tooltip
-                contentStyle={{
-                  backgroundColor: '#FFFFFF',
-                  borderColor: '#E5E5DF',
-                  borderRadius: '8px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
-                  fontSize: '12px',
-                  color: '#202A30',
-                }}
-              />
-              <Area
-                type="monotone"
-                dataKey="pm25"
-                stroke="#527D75"
-                strokeWidth={2}
-                fill="url(#propGradient)"
-                name="Airshed Mean PM2.5 (µg/m³)"
-              />
-            </AreaChart>
-          </ResponsiveContainer>
         </div>
       </div>
     </div>

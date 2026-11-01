@@ -1,10 +1,11 @@
 import React from 'react';
-import { RefreshCw, MapPin } from 'lucide-react';
+import { RefreshCw, MapPin, BookOpen } from 'lucide-react';
 
 interface HeaderProps {
   title: string;
   subtitle: string;
   onRefresh?: () => void;
+  onOpenGuide?: () => void;
   isLoading?: boolean;
   lastUpdated?: string;
 }
@@ -13,6 +14,7 @@ export const Header: React.FC<HeaderProps> = ({
   title,
   subtitle,
   onRefresh,
+  onOpenGuide,
   isLoading = false,
   lastUpdated,
 }) => {
@@ -27,6 +29,17 @@ export const Header: React.FC<HeaderProps> = ({
       </div>
 
       <div className="flex items-center gap-3">
+        {onOpenGuide && (
+          <button
+            onClick={onOpenGuide}
+            className="flex items-center gap-1.5 rounded-md border border-[#CDE5DF] bg-[#EAF4F1] px-3 py-1.5 text-xs font-semibold text-[#285D52] transition-all hover:bg-[#d5ebe5] shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+            title="Open Interactive User Guide"
+          >
+            <BookOpen className="h-3.5 w-3.5" />
+            <span>Quick Guide</span>
+          </button>
+        )}
+
         {lastUpdated && (
           <span className="font-mono text-[11px] text-[#8C959D]">
             Updated {new Date(lastUpdated).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}

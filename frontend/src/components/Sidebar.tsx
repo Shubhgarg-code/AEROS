@@ -9,7 +9,7 @@ import {
   Clock,
   BarChart3,
   Cpu,
-  Layers,
+  BookOpen,
 } from 'lucide-react';
 
 export type NavTab =
@@ -27,12 +27,14 @@ interface SidebarProps {
   currentTab: NavTab;
   onSelectTab: (tab: NavTab) => void;
   apiHealthy?: boolean;
+  onOpenGuide?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
   currentTab,
   onSelectTab,
   apiHealthy = true,
+  onOpenGuide,
 }) => {
   const navItems: Array<{
     id: NavTab;
@@ -45,7 +47,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       id: 'overview',
       label: 'Overview',
       icon: <LayoutDashboard className="h-4 w-4" />,
-      section: 'Monitoring',
+      section: 'Live Monitoring',
     },
     {
       id: 'live-map',
@@ -63,26 +65,26 @@ export const Sidebar: React.FC<SidebarProps> = ({
       id: 'spatial',
       label: 'Neighbourhood Estimates',
       icon: <Share2 className="h-4 w-4" />,
-      tag: 'Spatial',
+      tag: 'Virtual Sensor',
     },
     {
       id: 'propagation',
       label: 'Pollution Propagation',
       icon: <Wind className="h-4 w-4" />,
-      tag: 'Diffusion',
+      tag: 'Dispersion',
     },
     {
       id: 'simulator',
       label: 'What-if Scenarios',
       icon: <Sparkles className="h-4 w-4 text-[#C48A2C]" />,
       tag: 'Diwali',
-      section: 'Scenario Intelligence',
+      section: 'Policy Sandbox',
     },
     {
       id: 'recovery',
       label: 'Air Quality Recovery',
       icon: <Clock className="h-4 w-4" />,
-      tag: 'Time-to-Clear',
+      tag: 'Cleanout Time',
     },
     {
       id: 'comparison',
@@ -93,7 +95,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       id: 'models',
       label: 'Model Intelligence',
       icon: <Cpu className="h-4 w-4" />,
-      section: 'System',
+      section: 'Documentation',
     },
   ];
 
@@ -160,6 +162,24 @@ export const Sidebar: React.FC<SidebarProps> = ({
           );
         })}
       </nav>
+
+      {/* Quick Guide Trigger */}
+      {onOpenGuide && (
+        <div className="p-3 border-t border-[#E5E5DF] bg-[#FAF8F5]">
+          <button
+            onClick={onOpenGuide}
+            className="flex w-full items-center justify-between rounded-lg border border-[#CDE5DF] bg-[#EAF4F1] px-3 py-2 text-xs font-semibold text-[#285D52] hover:bg-[#d6eae4] transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
+          >
+            <div className="flex items-center gap-2">
+              <BookOpen className="h-4 w-4 text-brand-green" />
+              <span>Quick Guide</span>
+            </div>
+            <span className="text-[10px] rounded bg-white px-1.5 py-0.5 border border-[#CDE5DF] text-brand-green font-mono">
+              Help
+            </span>
+          </button>
+        </div>
+      )}
 
       {/* Status Footer */}
       <div className="border-t border-[#E5E5DF] p-3.5 bg-[#FAF8F5]">

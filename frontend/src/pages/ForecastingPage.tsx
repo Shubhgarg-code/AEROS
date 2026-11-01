@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import {
   TrendingUp,
   Clock,
-  Cpu,
   Wind,
-  ShieldAlert,
-  ArrowRight,
-  Info,
-  Calendar,
   Layers,
+  HelpCircle,
+  MapPin,
+  Calendar,
+  AlertCircle,
+  CheckCircle2,
 } from 'lucide-react';
 import {
   LineChart,
@@ -38,6 +38,24 @@ export const ForecastingPage: React.FC = () => {
   const [forecast, setForecast] = useState<AirQualityForecastData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [showHelper, setShowHelper] = useState<boolean>(false);
+
+  // Quick popular station shortcuts
+  const popularStations = [
+    { id: 'anand_vihar', label: 'Anand Vihar (East - Hotspot)' },
+    { id: 'punjabi_bagh', label: 'Punjabi Bagh (West)' },
+    { id: 'rk_puram', label: 'RK Puram (South)' },
+    { id: 'ito', label: 'ITO (Central Traffic)' },
+    { id: 'dwarka', label: 'Dwarka (Southwest)' },
+  ];
+
+  const horizonPresets = [
+    { hours: 6, label: '+6 Hours', desc: 'Evening' },
+    { hours: 12, label: '+12 Hours', desc: 'Overnight' },
+    { hours: 24, label: '+24 Hours', desc: 'Tomorrow' },
+    { hours: 48, label: '+48 Hours', desc: '2 Days' },
+    { hours: 72, label: '+72 Hours', desc: '3-Day Outlook' },
+  ];
 
   useEffect(() => {
     const loadStations = async () => {
@@ -91,6 +109,45 @@ export const ForecastingPage: React.FC = () => {
     <div className="space-y-6">
       <DisclaimerBanner type="uncertainty" />
 
+      {/* Explainer Banner */}
+      <div className="rounded-xl border border-[#CDE5DF] bg-[#EAF4F1]/60 p-4">
+        <div className="flex items-start justify-between">
+          <div className="flex items-start gap-2.5">
+            <TrendingUp className="h-4 w-4 text-brand-green mt-0.5 shrink-0" />
+            <div>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-[#285D52]">
+                72-Hour Predictive Airflow Intelligence
+              </h3>
+              <p className="mt-1 text-xs text-[#285D52]/90 leading-relaxed">
+                Choose any station and time horizon to see hourly pollution projections. The shaded band shows the 
+                <strong> 90% confidence interval</strong>, so you can plan outdoor routines, school schedules, 
+                and transit timing with clear scientific foresight.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => setShowHelper(!showHelper)}
+            className="text-[11px] font-medium text-brand-green hover:underline shrink-0 ml-3"
+          >
+            {showHelper ? 'Hide Guide' : 'How to Read'}
+          </button>
+        </div>
+
+        {showHelper && (
+          <div className="mt-3 pt-3 border-t border-[#CDE5DF] grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-[#285D52]">
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Green Line:</strong> Predicted PM2.5 level. Keep below 60 µg/m³ for healthy breathing.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Shaded Zone:</strong> Conformal 90% confidence margin. Wider band means more weather variability.
+            </div>
+            <div className="rounded-lg bg-white/70 p-2.5 border border-[#CDE5DF]">
+              <strong>• Red Dotted Line:</strong> Indian National Standard (NAAQS) safe daily limit of 60 µg/m³.
+            </div>
+          </div>
+        )}
+      </div>
+
       {/* Control Configuration Panel */}
       <div className="rounded-xl border border-[#E5E5DF] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
         <div className="border-b border-[#F2F2EC] pb-4">
@@ -102,11 +159,34 @@ export const ForecastingPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Quick Station Shortcuts */}
+        <div className="mt-4">
+          <label className="block text-xs font-medium text-charcoal-muted mb-1.5">
+            Quick Station Shortcuts:
+          </label>
+          <div className="flex flex-wrap gap-2">
+            {popularStations.map((st) => (
+              <button
+                key={st.id}
+                onClick={() => setSelectedStationId(st.id)}
+                className={`flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs transition-all ${
+                  selectedStationId === st.id
+                    ? 'border-[#CDE5DF] bg-[#EAF4F1] text-[#285D52] font-semibold shadow-sm'
+                    : 'border-[#E5E5DF] bg-[#FAFAF7] text-charcoal hover:bg-white'
+                }`}
+              >
+                <MapPin className={`h-3.5 w-3.5 ${selectedStationId === st.id ? 'text-brand-green' : 'text-charcoal-muted'}`} />
+                <span>{st.label}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 pt-4 border-t border-[#F2F2EC]">
           {/* Location Selector */}
           <div>
             <label className="block text-xs font-medium text-charcoal-muted mb-1.5">
-              Monitoring Station
+              All Monitoring Stations ({stations.length})
             </label>
             <select
               value={selectedStationId}
@@ -124,20 +204,22 @@ export const ForecastingPage: React.FC = () => {
           {/* Horizon Selector */}
           <div>
             <label className="block text-xs font-medium text-charcoal-muted mb-1.5">
-              Forecast Horizon
+              Forecast Time Horizon
             </label>
-            <div className="grid grid-cols-6 gap-1">
-              {[1, 6, 12, 24, 48, 72].map((h) => (
+            <div className="grid grid-cols-5 gap-1">
+              {horizonPresets.map((h) => (
                 <button
-                  key={h}
-                  onClick={() => setSelectedHorizon(h)}
-                  className={`rounded border py-1.5 text-xs font-mono transition-colors ${
-                    selectedHorizon === h
+                  key={h.hours}
+                  onClick={() => setSelectedHorizon(h.hours)}
+                  className={`rounded border py-1.5 text-center transition-colors ${
+                    selectedHorizon === h.hours
                       ? 'border-[#CDE5DF] bg-[#EAF4F1] text-[#285D52] font-semibold'
                       : 'border-[#E5E5DF] bg-white text-charcoal-muted hover:bg-[#FAFAF7]'
                   }`}
+                  title={h.desc}
                 >
-                  +{h}h
+                  <div className="font-mono text-xs">+{h.hours}h</div>
+                  <div className="text-[9px] opacity-75">{h.desc}</div>
                 </button>
               ))}
             </div>
@@ -146,14 +228,14 @@ export const ForecastingPage: React.FC = () => {
           {/* Model Family */}
           <div>
             <label className="block text-xs font-medium text-charcoal-muted mb-1.5">
-              Predictive Model
+              Predictive AI Model
             </label>
             <select
               value={selectedModel}
               onChange={(e) => setSelectedModel(e.target.value)}
               className="w-full rounded-md border border-[#E5E5DF] bg-[#FAFAF7] px-3 py-2 text-xs text-charcoal focus:border-brand-green focus:bg-white focus:outline-none transition-colors"
             >
-              <option value="ensemble">Ensemble (Validation-Weighted)</option>
+              <option value="ensemble">Ensemble (Validation-Weighted, Recommended)</option>
               <option value="xgboost">XGBoost Gradient Boosting</option>
               <option value="transformer">Temporal Transformer</option>
               <option value="lstm">LSTM Recurrent Network</option>
@@ -165,7 +247,7 @@ export const ForecastingPage: React.FC = () => {
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="text-xs font-medium text-charcoal-muted">
-                Wind Speed Modifier
+                Simulated Wind Speed
               </label>
               <span className="font-mono text-xs text-charcoal font-semibold">{windSpeed.toFixed(1)} m/s</span>
             </div>
@@ -196,18 +278,23 @@ export const ForecastingPage: React.FC = () => {
       {/* Target Horizon Prediction Cards */}
       {forecast && (
         <>
-          <div className="rounded-xl border border-[#E5E5DF] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-muted">
-                Forecast Summary
+          <div className="rounded-xl border border-[#E5E5DF] bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-muted">
+                  Forecast Summary for {currentStation?.name || selectedStationId}
+                </span>
+                <AQIBadge aqi={forecast.predicted_aqi} category={forecast.aqi_category} size="sm" />
+              </div>
+              <span className="font-mono text-xs text-charcoal-muted">
+                Target Horizon: +{forecast.forecast_horizon_hours} Hours Ahead
               </span>
-              <AQIBadge aqi={forecast.predicted_aqi} category={forecast.aqi_category} size="sm" />
             </div>
-            <p className="mt-1.5 text-xs text-charcoal leading-relaxed">
+            <p className="mt-2 text-sm text-charcoal leading-relaxed">
               At <strong className="font-semibold">+{forecast.forecast_horizon_hours} hours</strong>, air quality at{' '}
               <strong className="font-semibold">{currentStation?.name || selectedStationId}</strong> is projected to be{' '}
               <strong className="font-semibold">{forecast.aqi_category} (AQI {forecast.predicted_aqi})</strong>, with fine particulates
-              reaching <strong className="font-semibold">{forecast.predicted_pm25.toFixed(1)} µg/m³</strong> (
+              reaching <strong className="font-semibold text-brand-green">{forecast.predicted_pm25.toFixed(1)} µg/m³</strong> (
               {forecast.predicted_pm25 > 60
                 ? `${(forecast.predicted_pm25 / 60).toFixed(1)}x above the 60 µg/m³ daily guideline`
                 : 'within the 60 µg/m³ statutory guideline'}
@@ -288,7 +375,7 @@ export const ForecastingPage: React.FC = () => {
             </span>
             <span className="flex items-center gap-1.5 text-[#C26738]">
               <span className="h-0.5 w-3 bg-[#C26738]" />
-              NAAQS (60 µg/m³)
+              Safe Limit (60 µg/m³)
             </span>
           </div>
         </div>

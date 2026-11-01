@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import {
   Wind,
   Thermometer,
-  Droplets,
   AlertTriangle,
   Search,
   Activity,
   Layers,
-  ArrowUpRight,
+  Heart,
+  ShieldAlert,
   Info,
+  CheckCircle2,
+  AlertCircle,
+  HelpCircle,
 } from 'lucide-react';
 import {
   AreaChart,
@@ -31,6 +34,8 @@ export const OverviewPage: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [stationFilter, setStationFilter] = useState<'all' | 'hotspots' | 'residential' | 'commercial' | 'industrial'>('all');
+  const [showExplainer, setShowExplainer] = useState<boolean>(false);
 
   const fetchOverview = async () => {
     try {
@@ -76,12 +81,28 @@ export const OverviewPage: React.FC = () => {
   }
 
   const stations = data?.stations || [];
-  const filteredStations = stations.filter(
-    (s) =>
+  const filteredStations = stations.filter((s) => {
+    const matchesSearch =
       s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       s.neighborhood_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      s.classification.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+      s.classification.toLowerCase().includes(searchQuery.toLowerCase());
+
+    if (!matchesSearch) return false;
+
+    if (stationFilter === 'hotspots') {
+      return (s.aqi && s.aqi >= 300) || (s.pm2_5 && s.pm2_5 >= 150) || (s.current_pm25 && s.current_pm25 >= 150);
+    }
+    if (stationFilter === 'residential') {
+      return s.classification.toLowerCase().includes('residential');
+    }
+    if (stationFilter === 'commercial') {
+      return s.classification.toLowerCase().includes('commercial') || s.classification.toLowerCase().includes('traffic');
+    }
+    if (stationFilter === 'industrial') {
+      return s.classification.toLowerCase().includes('industrial');
+    }
+    return true;
+  });
 
   const currentMean25 = data?.citywide_pm25.mean || 92.0;
   const currentMean10 = data?.citywide_pm10.mean || 162.0;
@@ -102,28 +123,147 @@ export const OverviewPage: React.FC = () => {
   const windDir = data?.weather_summary.wind_direction_compass || 'NW';
   const pblHeight = data?.weather_summary.pbl_height_m || 420;
 
+  // Determine health advice based on AQI
+  const getHealthAdvice = (aqi: number) => {
+    if (aqi <= 100) {
+      return {
+        badge: 'Satisfactory',
+        badgeColor: 'bg-[#EAF4F1] text-[#285D52] border-[#CDE5DF]',
+        headline: 'Air quality is acceptable for outdoor routines.',
+        outdoor: 'Safe for morning jogging and outdoor activities.',
+        mask: 'No mask required for general public.',
+        windows: 'Safe to open windows for home ventilation.',
+      };
+    } else if (aqi <= 200) {
+      return {
+        badge: 'Moderate',
+        badgeColor: 'bg-[#FDF6E9] text-[#865914] border-[#F5E2BE]',
+        headline: 'Slight respiratory discomfort possible for sensitive individuals.',
+        outdoor: 'Sensitive groups (asthma, heart condition) should reduce intense cardio.',
+        mask: 'Recommended if commuting through dusty arterial roads.',
+        windows: 'Ventilate between 12 PM - 4 PM when daytime breeze is active.',
+      };
+    } else if (aqi <= 300) {
+      return {
+        badge: 'Poor',
+        badgeColor: 'bg-[#FDF0E9] text-[#873A16] border-[#F6D0BA]',
+        headline: 'Prolonged exposure may cause breathing discomfort.',
+        outdoor: 'Shift outdoor workouts to indoors or late afternoon.',
+        mask: 'Wear N95/FFP2 masks when stepping outside.',
+        windows: 'Keep windows closed during morning inversion (6 AM - 10 AM).',
+      };
+    } else {
+      return {
+        badge: 'Very Poor / Severe',
+        badgeColor: 'bg-[#FCEEEE] text-[#8A2424] border-[#F5C2C2]',
+        headline: 'Health Alert: High risk of respiratory symptoms for all residents.',
+        outdoor: 'Avoid all strenuous outdoor physical exertion.',
+        mask: 'N95 mask strictly advised for any outdoor travel.',
+        windows: 'Seal windows and run indoor HEPA air purifiers.',
+      };
+    }
+  };
+
+  const advice = getHealthAdvice(aqiVal);
+
   return (
     <div className="space-y-6">
       <DisclaimerBanner type="observation" />
 
-      {/* Narrative Air Quality Briefing */}
-      <div className="rounded-xl border border-[#E5E5DF] bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
-        <div className="flex items-start justify-between gap-4">
-          <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-muted">
-                Atmospheric Briefing
-              </span>
-              <AQIBadge aqi={aqiVal} category={aqiCat} size="sm" />
+      {/* Atmospheric Overview & Health Action Banner */}
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        {/* Atmospheric Summary (2 cols) */}
+        <div className="lg:col-span-2 rounded-xl border border-[#E5E5DF] bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between">
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-charcoal-muted">
+                  Live Citywide Briefing
+                </span>
+                <AQIBadge aqi={aqiVal} category={aqiCat} size="sm" />
+              </div>
+              <button
+                onClick={() => setShowExplainer(!showExplainer)}
+                className="flex items-center gap-1 text-[11px] font-medium text-brand-green hover:underline"
+              >
+                <HelpCircle className="h-3 w-3" />
+                <span>{showExplainer ? 'Hide Guide' : 'What do these numbers mean?'}</span>
+              </button>
             </div>
             <p className="text-sm text-charcoal leading-relaxed pt-1">
               Ambient air quality across Delhi NCR is currently{' '}
               <strong className="font-semibold text-charcoal">{aqiCat} (AQI {aqiVal})</strong>. Surface
               winds are calm at <strong className="font-semibold text-charcoal">{windSpd} m/s</strong> from the{' '}
               <strong className="font-semibold text-charcoal">{windDir}</strong>, with a boundary mixing height of{' '}
-              <strong className="font-semibold text-charcoal">{pblHeight} m</strong>. This nocturnal inversion tends to concentrate
-              fine particulates within low-elevation residential and transit corridors.
+              <strong className="font-semibold text-charcoal">{pblHeight} m</strong>.
             </p>
+          </div>
+
+          {/* Expandable Beginner Explainer */}
+          {showExplainer && (
+            <div className="mt-4 rounded-lg border border-[#E5E5DF] bg-[#FAFAF7] p-3 text-xs text-charcoal-muted space-y-1.5 animate-in fade-in duration-150">
+              <p>
+                <strong>• PM2.5 ({data?.citywide_pm25.mean.toFixed(0)} µg/m³):</strong> Fine particles from vehicle exhausts and burning that enter blood vessels. Safe 24-hr limit is <strong>60</strong>.
+              </p>
+              <p>
+                <strong>• PBL Height ({pblHeight}m):</strong> Planetary Boundary Layer. High ceiling (&gt;1000m) disperses smoke; low ceiling (&lt;400m) traps pollution near the ground like a lid.
+              </p>
+              <p>
+                <strong>• Wind ({windSpd} m/s):</strong> Winds above 3.5 m/s blow smoke away; calm winds (&lt;2 m/s) cause stagnant accumulation.
+              </p>
+            </div>
+          )}
+
+          <div className="mt-4 pt-3 border-t border-[#F2F2EC] flex flex-wrap items-center gap-4 text-xs text-charcoal-muted">
+            <span className="flex items-center gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-[#3D8B7A]" />
+              <strong>{stations.length}</strong> Stations Reporting
+            </span>
+            <span>•</span>
+            <span>
+              Diurnal Cycle: <strong>Peak at 8:00 AM & 10:00 PM</strong>
+            </span>
+            <span>•</span>
+            <span>
+              Thermal Inversion: <strong className={data?.weather_summary.inversion_risk === 'HIGH' ? 'text-[#873A16]' : 'text-brand-green'}>{data?.weather_summary.inversion_risk || 'MODERATE'}</strong>
+            </span>
+          </div>
+        </div>
+
+        {/* Public Health Action Card (1 col) */}
+        <div className="rounded-xl border border-[#E5E5DF] bg-[#FAF8F5] p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex flex-col justify-between">
+          <div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-charcoal">
+                <Heart className="h-3.5 w-3.5 text-brand-green" />
+                <span>Health Recommendations</span>
+              </div>
+              <span className={`rounded px-2 py-0.5 text-[10px] font-semibold border ${advice.badgeColor}`}>
+                {advice.badge}
+              </span>
+            </div>
+            <p className="mt-2 text-xs font-medium text-charcoal">
+              {advice.headline}
+            </p>
+
+            <ul className="mt-3 space-y-2 text-xs text-charcoal-muted">
+              <li className="flex items-start gap-2">
+                <span className="text-base leading-none">🏃</span>
+                <span>{advice.outdoor}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-base leading-none">😷</span>
+                <span>{advice.mask}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-base leading-none">🪟</span>
+                <span>{advice.windows}</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-4 pt-2 border-t border-[#E5E5DF] text-[11px] text-[#8C959D]">
+            Based on Indian NAAQS & WHO Air Quality Guidelines
           </div>
         </div>
       </div>
@@ -135,7 +275,7 @@ export const OverviewPage: React.FC = () => {
           value={data?.citywide_pm25.mean.toFixed(1) || '0.0'}
           unit="µg/m³"
           subtitle={`Min: ${data?.citywide_pm25.min.toFixed(0)} · Max: ${data?.citywide_pm25.max.toFixed(0)}`}
-          trend={{ value: '1.5x NAAQS (60)', isPositive: false }}
+          trend={{ value: `${(currentMean25 / 60).toFixed(1)}x Safe Limit (60)`, isPositive: false }}
           icon={<Activity className="h-4 w-4" />}
           badge={<AQIBadge aqi={data?.citywide_aqi} category={data?.aqi_category} size="sm" />}
         />
@@ -145,7 +285,7 @@ export const OverviewPage: React.FC = () => {
           value={data?.citywide_pm10.mean.toFixed(1) || '0.0'}
           unit="µg/m³"
           subtitle={`Min: ${data?.citywide_pm10.min.toFixed(0)} · Max: ${data?.citywide_pm10.max.toFixed(0)}`}
-          trend={{ value: '1.6x NAAQS (100)', isPositive: false }}
+          trend={{ value: `${(currentMean10 / 100).toFixed(1)}x Safe Limit (100)`, isPositive: false }}
           icon={<Layers className="h-4 w-4" />}
           badge={
             <span className="rounded bg-[#F2F2EC] px-2 py-0.5 text-[11px] font-mono text-[#5A626A] border border-[#E5E5DF]">
@@ -158,7 +298,7 @@ export const OverviewPage: React.FC = () => {
           title="Surface Wind & Drift"
           value={`${windSpd}`}
           unit="m/s"
-          subtitle={`Direction: ${windDir} (${data?.weather_summary.wind_direction_deg || 315}°)`}
+          subtitle={`Blowing from: ${windDir} (${data?.weather_summary.wind_direction_deg || 315}°)`}
           trend={{
             value: data?.weather_summary.inversion_risk === 'HIGH' ? 'Thermal Inversion' : 'Moderate Dispersion',
             isPositive: data?.weather_summary.inversion_risk !== 'HIGH',
@@ -176,7 +316,7 @@ export const OverviewPage: React.FC = () => {
           value={`${data?.weather_summary.temperature_c || 21.5}`}
           unit="°C"
           subtitle={`Relative Humidity: ${data?.weather_summary.humidity_pct || 58}%`}
-          trend={{ value: '15 Active Stations', isNeutral: true }}
+          trend={{ value: `${stations.length} Active Stations`, isNeutral: true }}
           icon={<Thermometer className="h-4 w-4" />}
           badge={
             <span className="rounded bg-[#EAF4F1] px-2 py-0.5 text-[11px] font-mono text-[#285D52] border border-[#CDE5DF]">
@@ -241,7 +381,7 @@ export const OverviewPage: React.FC = () => {
             </span>
             <span className="flex items-center gap-1.5 text-[#C26738]">
               <span className="h-0.5 w-3 bg-[#C26738]" />
-              NAAQS Guideline (60 µg/m³)
+              Safe Limit (60 µg/m³)
             </span>
           </div>
         </div>
@@ -259,10 +399,10 @@ export const OverviewPage: React.FC = () => {
                   <stop offset="95%" stopColor="#7899B5" stopOpacity={0.0} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="#F0F0EB" vertical={false} />
-              <XAxis dataKey="hour" stroke="#8C959D" fontSize={11} tickLine={false} />
-              <YAxis stroke="#8C959D" fontSize={11} tickLine={false} />
-              <ReferenceLine y={60} stroke="#C26738" strokeDasharray="4 4" />
+              <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#EBEBE6" />
+              <XAxis dataKey="hour" tick={{ fontSize: 11, fill: '#8C959D' }} tickLine={false} axisLine={false} />
+              <YAxis tick={{ fontSize: 11, fill: '#8C959D' }} tickLine={false} axisLine={false} />
+              <ReferenceLine y={60} stroke="#C26738" strokeDasharray="4 4" strokeWidth={1.5} />
               <Tooltip
                 contentStyle={{
                   backgroundColor: '#FFFFFF',
@@ -306,15 +446,61 @@ export const OverviewPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative w-64">
-            <Search className="absolute left-3 top-2.5 h-3.5 w-3.5 text-[#8C959D]" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Filter by station or zone..."
-              className="w-full rounded-md border border-[#E5E5DF] bg-[#FAFAF7] pl-9 pr-3 py-1.5 text-xs text-charcoal placeholder-[#8C959D] focus:border-brand-green focus:bg-white focus:outline-none transition-colors"
-            />
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Quick Filter Buttons */}
+            <div className="flex items-center rounded-lg border border-[#E5E5DF] bg-[#FAFAF7] p-0.5 text-xs">
+              <button
+                onClick={() => setStationFilter('all')}
+                className={`rounded px-2.5 py-1 transition-colors ${
+                  stationFilter === 'all'
+                    ? 'bg-white font-medium text-charcoal shadow-sm'
+                    : 'text-charcoal-muted hover:text-charcoal'
+                }`}
+              >
+                All ({stations.length})
+              </button>
+              <button
+                onClick={() => setStationFilter('hotspots')}
+                className={`rounded px-2.5 py-1 transition-colors ${
+                  stationFilter === 'hotspots'
+                    ? 'bg-[#FDF0E9] font-medium text-[#873A16] shadow-sm'
+                    : 'text-charcoal-muted hover:text-charcoal'
+                }`}
+              >
+                Hotspots
+              </button>
+              <button
+                onClick={() => setStationFilter('residential')}
+                className={`rounded px-2.5 py-1 transition-colors ${
+                  stationFilter === 'residential'
+                    ? 'bg-white font-medium text-charcoal shadow-sm'
+                    : 'text-charcoal-muted hover:text-charcoal'
+                }`}
+              >
+                Residential
+              </button>
+              <button
+                onClick={() => setStationFilter('industrial')}
+                className={`rounded px-2.5 py-1 transition-colors ${
+                  stationFilter === 'industrial'
+                    ? 'bg-white font-medium text-charcoal shadow-sm'
+                    : 'text-charcoal-muted hover:text-charcoal'
+                }`}
+              >
+                Industrial
+              </button>
+            </div>
+
+            <div className="relative w-56">
+              <Search className="absolute left-3 top-2.5 h-3.5 w-3.5 text-[#8C959D]" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search station or zone..."
+                className="w-full rounded-md border border-[#E5E5DF] bg-[#FAFAF7] pl-9 pr-3 py-1.5 text-xs text-charcoal placeholder-[#8C959D] focus:border-brand-green focus:bg-white focus:outline-none transition-colors"
+              />
+            </div>
           </div>
         </div>
 
@@ -329,7 +515,7 @@ export const OverviewPage: React.FC = () => {
                 <th className="py-3 px-4 font-medium">PM2.5 (µg/m³)</th>
                 <th className="py-3 px-4 font-medium">PM10 (µg/m³)</th>
                 <th className="py-3 px-4 font-medium">AQI</th>
-                <th className="py-3 px-4 text-right font-medium">Network Status</th>
+                <th className="py-3 px-4 text-right font-medium">Status</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[#F2F2EC] font-sans">
